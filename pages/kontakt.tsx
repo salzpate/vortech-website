@@ -20,7 +20,7 @@ const Contact: FunctionComponent = () => {
             <ContactCard name="Elfi Krammer" imageSrc="/assets/images/elfi-krammer-1413479a5b.jpg" email="info@vortech-force-krammer.de" phone="+49 9454 9498523" fax="+49 9454 9498521" emailHref="/lib/mailto.php" />
           </div>
           <div className="sm:col-span-2">
-            <ContactForm url="https://www.rakkasans.de/lib/sendmail.php" />
+            <ContactForm url="/lib/sendmail.php" />
           </div>
         </div>
       </PageSection>
