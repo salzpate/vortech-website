@@ -4,6 +4,11 @@ import axios, { AxiosError, AxiosRequestConfig, AxiosResponse } from 'axios';
 import Link from 'next/link';
 import { useForm } from 'react-hook-form';
 
+type MailSendData = {
+  status: string;
+  message: string;
+};
+
 type ContactFormProps = {
   url: string;
   style?: string;
@@ -31,10 +36,10 @@ function ContactForm(props: ContactFormProps): JSX.Element {
       data: data,
     };
     axios(config).then(
-      (response: AxiosResponse) => {
-        openSnackbar(response?.data, SnackBarTypes.success, 8000);
+      (response: AxiosResponse<MailSendData>) => {
+        openSnackbar(response?.data.message, SnackBarTypes.success, 8000);
       },
-      (error: AxiosError) => {
+      (error: AxiosError<MailSendData>) => {
         openSnackbar(error.response?.status + ' Die Nachricht konnte nicht verschickt werden!', SnackBarTypes.error, 10000);
       },
     );
