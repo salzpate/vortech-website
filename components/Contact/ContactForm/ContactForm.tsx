@@ -37,7 +37,13 @@ function ContactForm(props: ContactFormProps): JSX.Element {
     };
     axios(config).then(
       (response: AxiosResponse<MailSendData>) => {
-        openSnackbar(response?.data.message, SnackBarTypes.success, 8000);
+        if (response?.data.status === 'success') {
+          openSnackbar(response?.data.message, SnackBarTypes.success, 8000);
+        } else if (response?.data.status === 'error') {
+          openSnackbar(response?.data.message, SnackBarTypes.error, 8000);
+        } else {
+          openSnackbar(response?.data.message, SnackBarTypes.warning, 8000);
+        }
       },
       (error: AxiosError<MailSendData>) => {
         openSnackbar(error.response?.status + ' Die Nachricht konnte nicht verschickt werden!', SnackBarTypes.error, 10000);
