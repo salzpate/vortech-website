@@ -1,9 +1,9 @@
 .headerimage {
-  background-image: url('/assets/images/head-kontakt-1920.jpg');
+  background-image: url('/assets/images/head-kontakt-1920-6854c073a7.jpg');
 }
 
 @media screen and (max-width: 1024px) {
   .headerimage {
-    background-image: url('/assets/images/head-kontakt-1024.jpg');
+    background-image: url('/assets/images/head-kontakt-1024-96c7d40843.jpg');
   }
 }

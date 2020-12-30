@@ -14,10 +14,10 @@ const Home: FunctionComponent = () => {
       <PageSection headline="Elfi Krammer - VORTECH FORCE Generalimport" id="index" className="page-section">
         <div>Wir bieten Beratung, Direktvertrieb und Kundendienst für VORTECH FORCE und THERMOSTAR an. Für uns die perfekte Kombination für ein sauberes Zuhause nach industriellen Standards.</div>
         <div className="grid grid-cols-1 gap-6 my-6 sm:my-8 sm:grid-cols-2">
-          <MoreLink href="/vortech-force/" headline="VORTECH FORCE" imgSrc="/assets/images/vortech-geraet-schlauch.jpg">
+          <MoreLink href="/vortech-force/" headline="VORTECH FORCE" imgSrc="/assets/images/vortech-geraet-schlauch-f4f3c86daf.jpg">
             Der VORTECH FORCE, ein innovatives Staub- und Luftreinigungssystem, welches besonders für Allergiker geeignet ist.
           </MoreLink>
-          <MoreLink href="/thermostar/" headline="THERMOSTAR" imgSrc="/assets/images/thermostar-geraet-schlauch.jpg">
+          <MoreLink href="/thermostar/" headline="THERMOSTAR" imgSrc="/assets/images/thermostar-geraet-schlauch-d4ae1e7ff1.jpg">
             Der THERMOSTAR, ein einzigartiges Trocken-Dampfreinigungsgerät, welches ohne Chemikalien hygienisch reinigt.
           </MoreLink>
         </div>
@@ -26,7 +26,15 @@ const Home: FunctionComponent = () => {
         <div>Haben Sie interesse an einer Produktvorstellung? Wollen Sie Zubehör bestellen oder benötigen Sie einen Kundendienst?</div>
         <div className="grid grid-cols-1 gap-6 mt-6 sm:mt-8 sm:grid-cols-3">
           <div>
-            <ContactCard name="Elfi Krammer" imageSrc="/assets/images/elfi-krammer.jpg" email="info@vortech-force-krammer.de" phone="+49 9454 9498523" fax="+49 9454 9498521" emailHref="/lib/mailto.php" className="bg-white dark:bg-black" />
+            <ContactCard
+              name="Elfi Krammer"
+              imageSrc="/assets/images/elfi-krammer-1413479a5b.jpg"
+              email="info@vortech-force-krammer.de"
+              phone="+49 9454 9498523"
+              fax="+49 9454 9498521"
+              emailHref="/lib/mailto.php"
+              className="bg-white dark:bg-black"
+            />
           </div>
           <div className="sm:col-span-2">
             <ContactForm url="/lib/sendmail.php" style="white" />

@@ -1,9 +1,9 @@
 .headerimage {
-  background-image: url('/assets/images/head-thermostar-1920.jpg');
+  background-image: url('/assets/images/head-thermostar-1920-4cf3d77f66.jpg');
 }
 
 @media screen and (max-width: 1024px) {
   .headerimage {
-    background-image: url('/assets/images/head-thermostar-1024.jpg');
+    background-image: url('/assets/images/head-thermostar-1024-532fdb4cf7.jpg');
   }
 }
