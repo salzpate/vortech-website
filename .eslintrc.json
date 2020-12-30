@@ -1,0 +1,61 @@
+{
+  "env": {
+    "browser": true,
+    "es2021": true,
+    "node": true
+  },
+  "extends": [
+    "eslint:recommended",
+    "plugin:@typescript-eslint/eslint-recommended",
+    "plugin:@typescript-eslint/recommended",
+    "plugin:react/recommended",
+    "plugin:react-hooks/recommended",
+    "plugin:jsx-a11y/recommended",
+    "prettier/@typescript-eslint",
+    "plugin:prettier/recommended"
+  ],
+  "parser": "@typescript-eslint/parser",
+  "parserOptions": {
+    "ecmaFeatures": {
+      "jsx": true
+    },
+    "ecmaVersion": 12,
+    "project": "tsconfig.json",
+    "sourceType": "module"
+  },
+  "settings": {
+    "react": {
+      "createClass": "createReactClass",
+      "pragma": "React",
+      "fragment": "Fragment",
+      "version": "detect",
+      "flowVersion": "0.53"
+    },
+    "propWrapperFunctions": [
+        "forbidExtraProps",
+        {"property": "freeze", "object": "Object"},
+        {"property": "myFavoriteWrapper"}
+    ],
+    "linkComponents": [
+      "Hyperlink",
+      {"name": "Link", "linkAttribute": "to"}
+    ]
+  },
+  "plugins": [
+    "@typescript-eslint",
+    "node",
+    "prettier",
+    "react"
+  ],
+  "rules": {
+    "import/extensions": "off",
+    "jsx-a11y/anchor-is-valid": "off",
+    "prettier/prettier": [
+      "error", {}, { "usePrettierrc": true }
+    ],
+    "react/jsx-filename-extension": ["warn", { "extensions": [".ts", ".tsx"] }],
+    "react/prop-types": "off",
+    "react/jsx-uses-react": "off",
+    "react/react-in-jsx-scope": "off"
+  }
+}

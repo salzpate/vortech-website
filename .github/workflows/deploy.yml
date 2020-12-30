@@ -1,0 +1,42 @@
+name: Node.js CI
+
+on:
+  push:
+    branches: [ main ]
+
+env:
+  FTP_SERVER: 'vortech-force-krammer.de'
+  FTP_USERNAME: 'u46276'
+  FTP_LOCAL_DIR: './out/'
+  FTP_SERVER_DIR: '/web/vortech-force-krammer.de/'
+  NODE_VERSION: '14.x'
+
+jobs:
+  build-and-deploy:
+    name: Build and Deploy
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v2
+    - name: Get npm cache
+      uses: actions/cache@v2
+      with:
+        path: ${{ github.workspace }}/.next/cache
+        key: ${{ runner.os }}-nextjs-${{ hashFiles('**/package-lock.json') }}
+    - name: Use Node.js ${{ env.NODE_VERSION }}
+      uses: actions/setup-node@v1
+      with:
+        node-version: ${{ env.NODE_VERSION }}
+    - name: npm install, build
+      run: |
+        npm install
+        npm run build --if-present
+        npm run export --if-present
+        npm run postbuild --if-present
+    - name: FTP Deploy
+      uses: SamKirkland/FTP-Deploy-Action@4.0.0
+      with:
+        server: ${{ env.FTP_SERVER }}
+        username: ${{ env.FTP_USERNAME }}
+        password: ${{ secrets.FTP_PASSWORD }}
+        local-dir: ${{ env.FTP_LOCAL_DIR }}
+        server-dir: ${{ env.FTP_SERVER_DIR }}

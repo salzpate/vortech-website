@@ -1,0 +1,57 @@
+:target {
+  @apply block;
+  @apply relative;
+  top: -92px;
+  visibility: hidden;
+}
+
+html,
+body {
+  @apply h-full;
+}
+
+body {
+  @apply font-sans;
+}
+
+#__next {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.page-section a {
+  @apply duration-150;
+  @apply ease-in-out;
+  @apply no-underline;
+  @apply text-secondary;
+  @apply transition-all;
+}
+
+.page-section a:hover,
+.page-section a:hover img {
+  @apply duration-150;
+  @apply ease-in-out;
+  @apply opacity-75;
+  @apply transition-all;
+  @apply underline;
+  text-decoration-style: dotted;
+}
+
+a.button-link:hover {
+  @apply no-underline;
+}
+
+@media (prefers-color-scheme: dark) {
+  body {
+    @apply bg-black;
+  }
+
+  .page-section a {
+    @apply text-secondary-dark;
+  }
+
+  .images-dark {
+    filter: grayscale(60%);
+  }
+}

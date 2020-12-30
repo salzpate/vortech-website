@@ -1,0 +1,13 @@
+{
+    "recommendations": [
+      "christian-kohler.path-intellisense",
+      "HookyQR.beautify",
+      "wayou.vscode-todo-highlight",
+      "EditorConfig.editorconfig",
+      "streetsidesoftware.code-spell-checker",
+      "eamodio.gitlens",
+      "yzhang.markdown-all-in-one",
+      "dbaeumer.vscode-eslint",
+      "stylelint.vscode-stylelint"
+    ]
+  }

@@ -1,0 +1,111 @@
+.mailtext {
+  @apply hidden;
+}
+
+.formfield {
+  @apply flex;
+  @apply flex-col-reverse;
+  @apply w-full;
+  @apply mb-2;
+}
+
+.checkboxfield {
+  @apply flex;
+  @apply w-full;
+}
+
+.textinput,
+.textinputwhite,
+.textinputerror {
+  @apply appearance-none;
+  @apply bg-gray-100;
+  @apply block;
+  @apply border;
+  @apply leading-tight;
+  @apply mb-3;
+  @apply px-4;
+  @apply py-3;
+  @apply rounded;
+  @apply text-gray-800;
+  @apply w-full;
+  @apply transition;
+  @apply ease-in-out;
+  @apply duration-150;
+}
+
+.textinput,
+.textinputerror {
+  @apply bg-gray-100;
+}
+
+.textinput,
+.textinputwhite {
+  @apply border-gray-500;
+}
+
+.textinputwhite {
+  @apply bg-white;
+}
+
+.textinputerror {
+  @apply border-red-700;
+}
+
+.textinput:focus,
+.textinput:hover,
+.textinputwhite:focus,
+.textinputwhite:hover,
+.textinputerror:focus,
+.textinputerror:hover {
+  @apply border-secondary;
+  @apply outline-none;
+}
+
+.textinput:focus + label,
+.textinput:hover + label,
+.textinputwhite:focus + label,
+.textinputwhite:hover + label,
+.textinputerror:focus + label,
+.textinputerror:hover + label {
+  @apply text-secondary;
+}
+
+.checkbox {
+  @apply absolute;
+  @apply opacity-0;
+}
+
+.checkbox:checked + svg {
+  display: block;
+}
+
+@media (prefers-color-scheme: dark) {
+  .textinput,
+  .textinputwhite,
+  .textinputerror {
+    @apply bg-black;
+    @apply text-gray-300;
+  }
+
+  .textinputerror {
+    @apply border-red-500;
+  }
+
+  .textinput:focus,
+  .textinput:hover,
+  .textinputwhite:focus,
+  .textinputwhite:hover,
+  .textinputerror:focus,
+  .textinputerror:hover {
+    @apply border-secondary-dark;
+  }
+
+  .textinput:focus + label,
+  .textinput:hover + label,
+  .textinputwhite:focus + label,
+  .textinputwhite:hover + label,
+  .textinputerror:focus + label,
+  .textinputerror:hover + label {
+    @apply text-secondary-dark;
+  }
+}
