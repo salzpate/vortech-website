@@ -69,7 +69,11 @@ function Header(props: HeaderProps): JSX.Element {
       </div>
       <aside className={cn('transform top-0 left-0 w-64 bg-gray-100 shadow-xl fixed h-full overflow-auto ease-in-out transition-all duration-300 z-30 dark:bg-gray-900', { 'translate-x-0': isOn }, { '-translate-x-full': !isOn })}>
         <span className="flex w-full items-center p-4">
-          <img src="/assets/images/logo.png" alt="Logo" className="h-auto w-48 mx-auto" />
+          <Link href="/">
+            <a className={styles.headlogoSide} tabIndex={-1}>
+              &nbsp;
+            </a>
+          </Link>
         </span>
         {navMenuItems.map((item, i) => {
           return (
