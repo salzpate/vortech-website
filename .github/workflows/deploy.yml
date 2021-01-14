@@ -6,7 +6,7 @@ on:
 
 env:
   FTP_SERVER: 'vortech-force-krammer.de'
-  FTP_USERNAME: 'u46276'
+  FTP_USERNAME: 'ftp200003157'
   FTP_LOCAL_DIR: './out/'
   FTP_SERVER_DIR: '/web/vortech-force-krammer.de/'
   NODE_VERSION: '14.x'
