@@ -5,10 +5,7 @@ on:
     branches: [ main ]
 
 env:
-  FTP_SERVER: 'vortech-force-krammer.de'
-  FTP_USERNAME: 'ftp200003157'
   FTP_LOCAL_DIR: './out/'
-  FTP_SERVER_DIR: '/web/vortech-force-krammer.de/'
   NODE_VERSION: '14.x'
 
 jobs:
@@ -35,8 +32,8 @@ jobs:
     - name: FTP Deploy
       uses: SamKirkland/FTP-Deploy-Action@4.0.0
       with:
-        server: ${{ env.FTP_SERVER }}
-        username: ${{ env.FTP_USERNAME }}
+        server: ${{ secrets.FTP_SERVER }}
+        username: ${{ secrets.FTP_USERNAME }}
         password: ${{ secrets.FTP_PASSWORD }}
         local-dir: ${{ env.FTP_LOCAL_DIR }}
-        server-dir: ${{ env.FTP_SERVER_DIR }}
+        server-dir: ${{ secrets.FTP_SERVER_DIR }}
