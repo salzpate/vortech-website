@@ -37,3 +37,4 @@ jobs:
         password: ${{ secrets.FTP_PASSWORD }}
         local-dir: ${{ env.FTP_LOCAL_DIR }}
         server-dir: ${{ secrets.FTP_SERVER_DIR }}
+        git-ftp-args: --insecure
