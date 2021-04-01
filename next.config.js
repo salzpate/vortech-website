@@ -7,5 +7,8 @@ module.exports = {
   target: 'serverless',
   sassOptions: {
     includePaths: [path.resolve(__dirname, 'node_modules')],
+  },
+  future: {
+    webpack5: true
   }
 };
