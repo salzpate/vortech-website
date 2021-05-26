@@ -7,7 +7,8 @@ module.exports = {
   },
   purge: [
     './pages/**/*.tsx',
-    './components/**/*.tsx'
+    './components/**/*.tsx',
+    './node_modules/@salzpate/react-ui/**/*.js'
   ],
   darkMode: 'media',
   theme: {
