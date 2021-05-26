@@ -1,8 +1,7 @@
 import HeaderImage from '@/components/Header/HeaderImage';
 import Layout from '@/components/Layout';
 import { siteTitle } from '@/components/Layout/Layout';
-import PageSection from '@/components/PageSection';
-import HeadlineTextElement from '@/components/HeadlineTextElement';
+import { HeadlineTextElement, PageSection } from '@salzpate/react-ui/';
 import styles from '@/styles/thermostar.module.css';
 import { FunctionComponent } from 'react';
 

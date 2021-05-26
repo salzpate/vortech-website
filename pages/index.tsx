@@ -1,9 +1,7 @@
-import ContactCard from '@/components/Contact/ContactCard';
 import ContactForm from '@/components/Contact/ContactForm';
 import HeaderImage from '@/components/Header/HeaderImage';
 import Layout from '@/components/Layout';
-import MoreLink from '@/components/MoreLink';
-import PageSection from '@/components/PageSection';
+import { ContactCard, PageSection, MoreLink } from '@salzpate/react-ui';
 import styles from '@/styles/index.module.css';
 import { FunctionComponent } from 'react';
 

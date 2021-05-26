@@ -1,7 +1,7 @@
 import HeaderImage from '@/components/Header/HeaderImage';
 import Layout from '@/components/Layout';
 import { siteTitle } from '@/components/Layout/Layout';
-import PageSection from '@/components/PageSection';
+import { PageSection } from '@salzpate/react-ui/';
 import styles from '@/styles/index.module.css';
 import Link from 'next/link';
 import { FunctionComponent } from 'react';

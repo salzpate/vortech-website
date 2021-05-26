@@ -1,8 +1,8 @@
-import Footer from '@/components/Footer';
 import Header from '@/components/Header';
-import SnackBarProvider from '@/components/SnackBar';
 import { MenuData } from '@/data/MenuData';
+import { Footer,  } from '@salzpate/react-ui';
 import Head from 'next/head';
+import { SnackBarProvider } from '../SnackBar';
 
 export const siteTitle = 'VORTECH FORCE Generalimport Krammer';
 

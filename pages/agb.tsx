@@ -1,6 +1,6 @@
 import Layout from '@/components/Layout';
 import { siteTitle } from '@/components/Layout/Layout';
-import PageSection from '@/components/PageSection';
+import { PageSection } from '@salzpate/react-ui/';
 import { FunctionComponent } from 'react';
 
 export const pageTitle = 'AGB';

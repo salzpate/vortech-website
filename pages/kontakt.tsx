@@ -1,9 +1,8 @@
-import ContactCard from '@/components/Contact/ContactCard';
 import ContactForm from '@/components/Contact/ContactForm';
 import HeaderImage from '@/components/Header/HeaderImage';
 import Layout from '@/components/Layout';
 import { siteTitle } from '@/components/Layout/Layout';
-import PageSection from '@/components/PageSection';
+import { ContactCard, PageSection } from '@salzpate/react-ui';
 import styles from '@/styles/kontakt.module.css';
 import { FunctionComponent } from 'react';
 

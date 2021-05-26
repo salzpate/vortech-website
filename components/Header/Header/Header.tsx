@@ -1,6 +1,6 @@
 import { ActiveMenuItem, NavMenuItem } from '@/components/commons/Menu/Menu';
 import NavBarLink from '@/components/Header/NavBarLink';
-import NavLink from '@/components/Header/NavLink';
+import { NavLink } from '@salzpate/react-ui';
 import cn from 'classnames';
 import Link from 'next/link';
 import { useState } from 'react';

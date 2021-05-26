@@ -1,10 +1,9 @@
 import HeaderImage from '@/components/Header/HeaderImage';
 import Layout from '@/components/Layout';
 import { siteTitle } from '@/components/Layout/Layout';
-import PageSection from '@/components/PageSection';
-import HeadlineTextElement from '@/components/HeadlineTextElement';
 import styles from '@/styles/index.module.css';
 import { FunctionComponent } from 'react';
+import { HeadlineTextElement, PageSection } from '@salzpate/react-ui/';
 
 export const pageTitle = 'Vortech Force';
 
