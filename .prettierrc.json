@@ -14,7 +14,7 @@
   "tabWidth": 2,
   "trailingComma": "all",
   "useTabs": false,
-   "overrides": [{
+    "overrides": [{
       "files": "*.html",
       "options": {
         "parser": "html"

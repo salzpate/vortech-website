@@ -6,20 +6,16 @@
   },
   "extends": [
     "eslint:recommended",
-    "plugin:@typescript-eslint/eslint-recommended",
     "plugin:@typescript-eslint/recommended",
-    "plugin:react/recommended",
-    "plugin:react-hooks/recommended",
-    "plugin:jsx-a11y/recommended",
-    "prettier/@typescript-eslint",
-    "plugin:prettier/recommended"
+    "next",
+    "prettier"
   ],
   "parser": "@typescript-eslint/parser",
   "parserOptions": {
     "ecmaFeatures": {
       "jsx": true
     },
-    "ecmaVersion": 12,
+    "ecmaVersion": 2020,
     "project": "tsconfig.json",
     "sourceType": "module"
   },
@@ -31,11 +27,6 @@
       "version": "detect",
       "flowVersion": "0.53"
     },
-    "propWrapperFunctions": [
-        "forbidExtraProps",
-        {"property": "freeze", "object": "Object"},
-        {"property": "myFavoriteWrapper"}
-    ],
     "linkComponents": [
       "Hyperlink",
       {"name": "Link", "linkAttribute": "to"}
@@ -43,9 +34,9 @@
   },
   "plugins": [
     "@typescript-eslint",
-    "node",
     "prettier",
-    "react"
+    "react",
+    "react-hooks"
   ],
   "rules": {
     "import/extensions": "off",

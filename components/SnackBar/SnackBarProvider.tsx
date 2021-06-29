@@ -13,7 +13,7 @@ export type SnackBarContextType = {
   closeSnackbar: () => void;
 };
 
-function createCtx<ContextType extends {} | null>() {
+function createCtx<ContextType extends unknown | null>() {
   const ctx = createContext<ContextType | null>(null);
   function useCtx() {
     const c = useContext(ctx);

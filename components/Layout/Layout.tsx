@@ -1,6 +1,6 @@
 import Header from '@/components/Header';
 import { MenuData } from '@/data/MenuData';
-import { Footer,  } from '@salzpate/react-ui';
+import { Footer } from '@salzpate/react-ui';
 import Head from 'next/head';
 import { SnackBarProvider } from '../SnackBar';
 
