@@ -3,9 +3,9 @@ import cn from 'classnames';
 import styles from './HeaderImage.module.css';
 
 type HeaderImageProps = {
-  imageClass?: string | undefined;
-  text1?: string | undefined;
-  text2?: string | undefined;
+  imageClass?: string;
+  text1?: string;
+  text2?: string;
   alternate?: boolean;
 };
 

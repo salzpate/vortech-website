@@ -36,22 +36,22 @@ function SnackBarProvider(props: SnackBarProviderProps): JSX.Element {
   const [type, setType] = useState(SnackBarTypes.info);
   const { children } = props;
 
-  const triggerSnackbar = (text: string, type: SnackBarTypes, duration: number): void => {
-    setText(text);
-    setType(type);
+  const triggerSnackbar = (snackBarText: string, snackBarType: SnackBarTypes, duration: number): void => {
+    setText(snackBarText);
+    setType(snackBarType);
     setIsOpen(true);
     clearTimeout(timeoutId);
     setTimeoutId(setTimeout(() => setIsOpen(false), duration));
   };
 
-  const openSnackbar = (text: string, type: SnackBarTypes, duration: number): void => {
+  const openSnackbar = (snackBarText: string, snackBarType: SnackBarTypes, duration: number): void => {
     if (isOpen === true) {
       setIsOpen(false);
       setTimeout(() => {
-        triggerSnackbar(text, type, duration);
+        triggerSnackbar(snackBarText, snackBarType, duration);
       }, defaultInterval);
     } else {
-      triggerSnackbar(text, type, duration);
+      triggerSnackbar(snackBarText, snackBarType, duration);
     }
   };
 
