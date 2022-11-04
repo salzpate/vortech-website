@@ -15,7 +15,7 @@ const FileNotFound: FunctionComponent = () => {
       <PageSection headline="Seite nicht gefunden" id="notfound">
         <div>Die gewünschte Seite wurde nicht gefunden.</div>
         <div className="bg-yellow-400 rounded p-8 my-16">
-          <Link href="/">
+          <Link href="/" legacyBehavior>
             <a className="inline-flex items-center gap-0 text-yellow-800 hover:underline hover:gap-1">
               <span>Weiter zur Startseite</span>{' '}
               <svg className="w-3 h-3 ml-1" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">

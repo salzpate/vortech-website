@@ -98,11 +98,7 @@ function ContactForm(props: ContactFormProps): JSX.Element {
             </svg>
           </div>
           <div className={['block tracking-wide text-xs mb-2 select-none', errors.name ? 'text-red-700 dark:text-red-500' : 'dark:text-gray-500'].join(' ')}>
-            Ich habe die{' '}
-            <Link href="/datenschutz/">
-              <a>Datenschutzerklärung</a>
-            </Link>{' '}
-            gelesen und bin mit der Speicherung/Verarbeitung meiner Kontaktdaten zum Zweck der Kontaktaufnahme einverstanden.
+            Ich habe die <Link href="/datenschutz/">Datenschutzerklärung</Link> gelesen und bin mit der Speicherung/Verarbeitung meiner Kontaktdaten zum Zweck der Kontaktaufnahme einverstanden.
           </div>
         </label>
       </div>

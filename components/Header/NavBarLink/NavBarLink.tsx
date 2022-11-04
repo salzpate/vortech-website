@@ -7,7 +7,7 @@ type NavBarLinkProps = NavMenu;
 function NavBarLink(props: NavBarLinkProps): JSX.Element {
   const { href, children, activeMenu, activeMenuName } = props;
   return (
-    <Link href={href}>
+    <Link href={href} legacyBehavior>
       <a className={activeMenuName && activeMenu && activeMenu === activeMenuName ? styles.activated : styles.navbarlink}>{children}</a>
     </Link>
   );

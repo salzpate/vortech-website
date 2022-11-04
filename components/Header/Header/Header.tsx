@@ -21,7 +21,7 @@ function Header(props: HeaderProps): JSX.Element {
           <div className="flex items-center justify-between h-14 sm:h-16">
             <div className="flex items-center">
               <div className="shrink-0">
-                <Link href="/">
+                <Link href="/" legacyBehavior>
                   <a className={styles.headlogo} tabIndex={-1}>
                     &nbsp;
                   </a>
@@ -69,7 +69,7 @@ function Header(props: HeaderProps): JSX.Element {
       </div>
       <aside className={cn('transform top-0 left-0 w-64 bg-gray-100 shadow-xl fixed h-full overflow-auto ease-in-out transition-all duration-300 z-30 dark:bg-gray-900', { 'translate-x-0': isOn }, { '-translate-x-full': !isOn })}>
         <span className="flex w-full items-center p-4">
-          <Link href="/">
+          <Link href="/" legacyBehavior>
             <a className={styles.headlogoSide} tabIndex={-1}>
               &nbsp;
             </a>

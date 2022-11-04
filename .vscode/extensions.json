@@ -1,7 +1,6 @@
 {
     "recommendations": [
       "christian-kohler.path-intellisense",
-      "HookyQR.beautify",
       "wayou.vscode-todo-highlight",
       "EditorConfig.editorconfig",
       "streetsidesoftware.code-spell-checker",
