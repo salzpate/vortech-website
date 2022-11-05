@@ -12,7 +12,7 @@ const Contact: FunctionComponent = () => {
   return (
     <Layout title={pageTitle + ' - ' + siteTitle} activeMenu="kontakt">
       <HeaderImage text1="Die Kraft der Natur" text2="Die Stärke der Technologie" imageClass={styles.headerimage} />
-      <PageSection headline="Kontakt" id="kontakt">
+      <PageSection headline="Kontakt" id="kontakt" className="page-section">
         <div>Haben Sie interesse an einer Produktvorstellung? Wollen Sie Zubehör bestellen oder benötigen Sie einen Kundendienst?</div>
         <div className="grid grid-cols-1 gap-6 my-6 sm:my-8 sm:grid-cols-3 auto-rows-fr">
           <div>
