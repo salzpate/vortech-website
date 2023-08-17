@@ -9,10 +9,8 @@
   "scripts": {
     "dev": "next dev",
     "build": "next build",
-    "export": "next export",
     "lint": "next lint",
-    "start": "next start",
-    "sitemap": "node sitemap_generator.js"
+    "start": "next start"
   },
   "dependencies": {
     "@salzpate/react-ui": "^1.0.1",

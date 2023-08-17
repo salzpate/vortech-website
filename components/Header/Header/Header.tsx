@@ -1,3 +1,5 @@
+'use client';
+
 import { ActiveMenuItem, NavMenuItem } from '@/components/commons/Menu/Menu';
 import NavBarLink from '@/components/Header/NavBarLink';
 import { NavLink } from '@salzpate/react-ui';

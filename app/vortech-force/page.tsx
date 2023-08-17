@@ -1,16 +1,9 @@
-import HeaderImage from '@/components/Header/HeaderImage';
-import Layout from '@/components/Layout';
-import { siteTitle } from '@/components/Layout/Layout';
-import styles from '@/styles/index.module.css';
-import { FunctionComponent } from 'react';
-import { HeadlineTextElement, PageSection } from '@salzpate/react-ui/';
+import { JSX } from 'react';
+import { HeadlineTextElement, PageSection } from '@salzpate/react-ui';
 
-export const pageTitle = 'Vortech Force';
-
-const VortechForce: FunctionComponent = () => {
+function VortechForce(): JSX.Element {
   return (
-    <Layout title={pageTitle + ' - ' + siteTitle} activeMenu="vortech">
-      <HeaderImage text1="Die Kraft der Natur" text2="Die Stärke der Technologie" imageClass={styles.headerimage} />
+    <>
       <PageSection headline="Vortech Force" id="vortechforce">
         <div>Ein innovatives Staub- und Luftreinigungssystem, welches besonders für Allergiker geeignet ist.</div>
         <div className="grid grid-cols-1 gap-6 my-6 sm:my-8 sm:grid-cols-2 lg:grid-cols-4 auto-rows-fr">
@@ -71,8 +64,8 @@ const VortechForce: FunctionComponent = () => {
           </HeadlineTextElement>
         </div>
       </PageSection>
-    </Layout>
+    </>
   );
-};
+}
 
 export default VortechForce;

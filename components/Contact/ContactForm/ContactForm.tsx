@@ -1,3 +1,5 @@
+'use client';
+
 import styles from './ContactForm.module.css';
 import axios, { AxiosError, AxiosResponse, RawAxiosRequestConfig } from 'axios';
 import Link from 'next/link';

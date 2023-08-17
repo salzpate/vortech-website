@@ -1,16 +1,18 @@
+import { JSX } from 'react';
 import HeaderImage from '@/components/Header/HeaderImage';
-import Layout from '@/components/Layout';
-import { siteTitle } from '@/components/Layout/Layout';
-import { PageSection } from '@salzpate/react-ui/';
 import styles from '@/styles/index.module.css';
+import HeaderMainLayout from '@/components/HeaderMainLayout/HeaderMainLayout';
+import { Metadata } from 'next';
+import { PageSection } from '@salzpate/react-ui';
 import Link from 'next/link';
-import { FunctionComponent } from 'react';
 
-export const pageTitle = '404';
+export const metadata: Metadata = {
+  title: '404',
+};
 
-const FileNotFound: FunctionComponent = () => {
+function FileNotFound(): JSX.Element {
   return (
-    <Layout title={pageTitle + ' - ' + siteTitle}>
+    <HeaderMainLayout>
       <HeaderImage text1="Die Kraft der Natur" text2="Die Stärke der Technologie" imageClass={styles.headerimage} />
       <PageSection headline="Seite nicht gefunden" id="notfound">
         <div>Die gewünschte Seite wurde nicht gefunden.</div>
@@ -25,8 +27,8 @@ const FileNotFound: FunctionComponent = () => {
           </Link>
         </div>
       </PageSection>
-    </Layout>
+    </HeaderMainLayout>
   );
-};
+}
 
 export default FileNotFound;

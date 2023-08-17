@@ -6,9 +6,10 @@ module.exports = {
     purgeLayersByDefault: true,
   },
   content: [
-    './pages/**/*.tsx',
-    './components/**/*.tsx',
-    './node_modules/@salzpate/react-ui/**/*.js'
+    './app/**/*.{js,ts,jsx,tsx,mdx}',
+    './pages/**/*.{js,ts,jsx,tsx,mdx}',
+    './components/**/*.{js,ts,jsx,tsx,mdx}',
+    './node_modules/@salzpate/react-ui/**/*.{js,ts,jsx,tsx,mdx}'
   ],
   theme: {
     columnCount: [ 1, 2, 3, 4, 5 ],

@@ -1,13 +1,13 @@
+import { JSX } from 'react';
 import ContactForm from '@/components/Contact/ContactForm';
 import HeaderImage from '@/components/Header/HeaderImage';
-import Layout from '@/components/Layout';
-import { ContactCard, PageSection, MoreLink } from '@salzpate/react-ui';
+import HeaderMainLayout from '@/components/HeaderMainLayout';
 import styles from '@/styles/index.module.css';
-import { FunctionComponent } from 'react';
+import { ContactCard, MoreLink, PageSection } from '@salzpate/react-ui';
 
-const Home: FunctionComponent = () => {
+function Home(): JSX.Element {
   return (
-    <Layout>
+    <HeaderMainLayout>
       <HeaderImage text1="Die Kraft der Natur" text2="Die Stärke der Technologie" imageClass={styles.headerimage} />
       <PageSection headline="Elfi Krammer - VORTECH FORCE Generalimport" id="index" className="page-section">
         <div>Wir bieten Beratung, Direktvertrieb und Kundendienst für VORTECH FORCE und THERMOSTAR an. Für uns die perfekte Kombination für ein sauberes Zuhause nach industriellen Standards.</div>
@@ -39,8 +39,8 @@ const Home: FunctionComponent = () => {
           </div>
         </div>
       </PageSection>
-    </Layout>
+    </HeaderMainLayout>
   );
-};
+}
 
 export default Home;

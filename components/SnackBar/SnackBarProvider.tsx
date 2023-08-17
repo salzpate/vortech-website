@@ -1,3 +1,5 @@
+'use client';
+
 import React, { createContext, ReactNode, useContext, useState } from 'react';
 import { SnackBar, SnackBarTypes } from '@salzpate/react-ui';
 
@@ -23,7 +25,7 @@ function createCtx<ContextType extends unknown | null>() {
   return [useCtx, ctx.Provider] as const;
 }
 
-export const [useSnackBar, CtxProvider] = createCtx<SnackBarContextType>();
+const [useSnackBar, CtxProvider] = createCtx<SnackBarContextType>();
 
 function SnackBarProvider(props: SnackBarProviderProps): JSX.Element {
   const [isOpen, setIsOpen] = useState(false);
@@ -69,3 +71,4 @@ function SnackBarProvider(props: SnackBarProviderProps): JSX.Element {
 }
 
 export default SnackBarProvider;
+export { useSnackBar, CtxProvider };
