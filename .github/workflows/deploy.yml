@@ -29,7 +29,6 @@ jobs:
       run: |
         npm install
         npm run build --if-present
-        npm run export --if-present
     - name: FTP Deploy
       uses: SamKirkland/FTP-Deploy-Action@4.3.2
       with:
