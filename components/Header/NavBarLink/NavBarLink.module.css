@@ -1,12 +1,12 @@
 .activated,
 .navbarlink {
-  --tw-font-weight: var(--font-weight-light);
+  --tw-font-weight: var(--font-weight-thin);
   --tw-tracking: var(--tracking-widest);
   --tw-duration: 300ms;
   --tw-ease: var(--ease-in-out);
   color: rgba(23, 23, 23, 1);
   font-size: var(--text-sm);
-  font-weight: var(--font-weight-light);
+  font-weight: var(--font-weight-thin);
   letter-spacing: var(--tracking-widest);
   line-height: var(--tw-leading, var(--text-sm--line-height));
   position: relative;
@@ -24,7 +24,7 @@
 
 .activated::before,
 .navbarlink::before {
-  --tw-font-weight: var(--font-weight-light);
+  --tw-font-weight: var(--font-weight-thin);
   --tw-tracking: var(--tracking-widest);
   --tw-duration: 300ms;
   --tw-ease: var(--ease-in-out);
@@ -50,7 +50,7 @@
 
 .activated:hover,
 .navbarlink:hover {
-  --tw-font-weight: var(--font-weight-light);
+  --tw-font-weight: var(--font-weight-thin);
   --tw-tracking: var(--tracking-widest);
   --tw-duration: 300ms;
   --tw-ease: var(--ease-in-out);
@@ -65,7 +65,7 @@
 
 .activated:hover::before,
 .navbarlink:hover::before {
-  --tw-font-weight: var(--font-weight-light);
+  --tw-font-weight: var(--font-weight-thin);
   --tw-tracking: var(--tracking-widest);
   --tw-duration: 300ms;
   --tw-ease: var(--ease-in-out);
