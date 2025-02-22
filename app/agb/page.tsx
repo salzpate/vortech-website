@@ -1,11 +1,13 @@
+'use client';
+
 import { JSX } from 'react';
 import { PageSection } from '@salzpate/react-ui';
 
 function AGB(): JSX.Element {
   return (
     <PageSection headline="Allgemeine Geschäftsbedingungen für den Kauf und die Lieferung neuwertiger Waren durch die Verkäuferfirma" id="agb">
-      <div className="pb-8 page-section">
-        <h2 className="text-gray-900 uppercase tracking-tight font-medium text-xl sm:text-2xl lg:text-3xl dark:text-gray-200">A. Vertragsabschluss</h2>
+      <div className="page-section pb-8">
+        <h2 className="text-xl font-medium tracking-tight text-gray-900 uppercase sm:text-2xl lg:text-3xl dark:text-gray-200">A. Vertragsabschluss</h2>
         <p className="my-4">
           Der Kaufvertrag kommt durch Annahme der vom Käufer unterzeichneten Bestellung des Kaufgegenstandes zustande. Eine schriftliche Bestätigung der Annahme durch den Verkäufer ist nicht erforderlich. Der Verkäufer verpflichtet sich
           jedoch, eine etwaige Ablehnung der Bestellung dem Käufer unverzüglich schriftlich mitzuteilen.
@@ -13,10 +15,10 @@ function AGB(): JSX.Element {
           Das Recht des Käufers zum Widerruf nach den Bestimmungen des Gesetzes, betreffend die Abzahlungsgeschäfte und des Gesetzes über den Widerruf von Haustürgeschäften und ähnlichen Geschäften, bleibt unberührt.
         </p>
         <br />
-        <h2 className="text-gray-900 uppercase tracking-tight font-medium text-xl sm:text-2xl lg:text-3xl dark:text-gray-200">B. Kaufpreis</h2>
+        <h2 className="text-xl font-medium tracking-tight text-gray-900 uppercase sm:text-2xl lg:text-3xl dark:text-gray-200">B. Kaufpreis</h2>
         <p className="my-4">Der Preis des Kaufgegenstandes versteht sich ohne Skonto und sonstige Nachlässe einschließlich der Umsatzsteuer. Die Lieferung erfolgt porto- und verpackungsfrei. Die Nachnahmekosten trägt der Käufer.</p>
         <br />
-        <h2 className="text-gray-900 uppercase tracking-tight font-medium text-xl sm:text-2xl lg:text-3xl dark:text-gray-200">C. Zahlung / Zahlungsverzug / Abnahmeverweigerung</h2>
+        <h2 className="text-xl font-medium tracking-tight text-gray-900 uppercase sm:text-2xl lg:text-3xl dark:text-gray-200">C. Zahlung / Zahlungsverzug / Abnahmeverweigerung</h2>
         <p className="my-4">
           Der Kaufpreis ist bei Übergabe des Kaufgegenstandes und Aushändigung oder Übersendung der Rechnung zur Zahlung in bar. / Barscheck / EC-Scheck fällig. Der Verkäufer kann, wenn der Käufer mit der Zahlung - bei Vereinbarung von
           Teilzahlungen mit zwei aufeinanderfolgenden Raten - in Verzug kommt, oder vorsätzlich oder grob fahrlässig die bestellte Ware nicht abnimmt, dem Käufer schriftlich eine Nachfrist von vierzehn Tagen setzen mit der Erklärung, dass
@@ -24,17 +26,17 @@ function AGB(): JSX.Element {
           Schadenersatz, wegen Nichterfüllung, zu verlangen.
         </p>
         <br />
-        <h2 className="text-gray-900 uppercase tracking-tight font-medium text-xl sm:text-2xl lg:text-3xl dark:text-gray-200">D. Eigentumsvorbehalt</h2>
+        <h2 className="text-xl font-medium tracking-tight text-gray-900 uppercase sm:text-2xl lg:text-3xl dark:text-gray-200">D. Eigentumsvorbehalt</h2>
         <p className="my-4">Der Kaufgegenstand bleibt bis zum Ausgleich der, dem Verkäufer aufgrund des Kaufvertrages Zustehenden, Forderung im Eigentum des Verkäufers.</p>
         <br />
-        <h2 className="text-gray-900 uppercase tracking-tight font-medium text-xl sm:text-2xl lg:text-3xl dark:text-gray-200">E. Gewährleistung</h2>
+        <h2 className="text-xl font-medium tracking-tight text-gray-900 uppercase sm:text-2xl lg:text-3xl dark:text-gray-200">E. Gewährleistung</h2>
         <p className="my-4">
           Im Gewährleistungsfalle ist dem Verkäufer die Nachbesserung oder Ersatzlieferung nach dessen Wahl gestattet. Der Käufer kann seinen Anspruch auf Herabsetzung der Vergütung (Minderung) oder nach seiner Wahl Rückgängigmachung des
           Vertrages (Wandlung) erst geltend machen, wenn die Nachbesserung oder Ersatzlieferung durch den Verkäufer fehlgeschlagen ist. Der Anspruch auf Schadenersatz wegen Nichterfüllung im Falle des Fehlens zugesicherter Eigenschaften
           bleibt hiervon unberührt.
         </p>
         <br />
-        <h2 className="text-gray-900 uppercase tracking-tight font-medium text-xl sm:text-2xl lg:text-3xl dark:text-gray-200">F. Erfüllungsort und Gerichtsstand</h2>
+        <h2 className="text-xl font-medium tracking-tight text-gray-900 uppercase sm:text-2xl lg:text-3xl dark:text-gray-200">F. Erfüllungsort und Gerichtsstand</h2>
         <p className="my-4">
           1. Erfüllungsort ist der Sitz des Verkäufers.
           <br />
@@ -42,10 +44,10 @@ function AGB(): JSX.Element {
           Verkäufers vereinbart.
         </p>
         <br />
-        <h2 className="text-gray-900 uppercase tracking-tight font-medium text-xl sm:text-2xl lg:text-3xl dark:text-gray-200">G. Schriftform</h2>
+        <h2 className="text-xl font-medium tracking-tight text-gray-900 uppercase sm:text-2xl lg:text-3xl dark:text-gray-200">G. Schriftform</h2>
         <p className="my-4">Änderungen oder Ergänzungen, sowie sämtliche Nebenabrede.</p>
         <br />
-        <h2 className="text-gray-900 uppercase tracking-tight font-medium text-xl sm:text-2xl lg:text-3xl dark:text-gray-200">Garantiebestimmungen</h2>
+        <h2 className="text-xl font-medium tracking-tight text-gray-900 uppercase sm:text-2xl lg:text-3xl dark:text-gray-200">Garantiebestimmungen</h2>
         <p className="my-4">
           Vorbehaltlich der folgenden aufgeführten Bestimmungen und Ausnahmen garantiert die Firma <span className="font-bold">KRAMMER - VORTECH FORCE Generalimport</span>, dem Erstkäufer (nicht dem Wiederverkauf), dass jedes{' '}
           <span className="font-bold">VORTECH FORCE - Erzeugnis</span> keine Material- und Arbeitsfehler bei normaler Benutzung und Anwendung aufweist, und zwar wie folgt:

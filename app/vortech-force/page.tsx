@@ -1,3 +1,5 @@
+'use client';
+
 import { JSX } from 'react';
 import { HeadlineTextElement, PageSection } from '@salzpate/react-ui';
 
@@ -6,7 +8,7 @@ function VortechForce(): JSX.Element {
     <>
       <PageSection headline="Vortech Force" id="vortechforce">
         <div>Ein innovatives Staub- und Luftreinigungssystem, welches besonders für Allergiker geeignet ist.</div>
-        <div className="grid grid-cols-1 gap-6 my-6 sm:my-8 sm:grid-cols-2 lg:grid-cols-4 auto-rows-fr">
+        <div className="my-6 grid auto-rows-fr grid-cols-1 gap-6 sm:my-8 sm:grid-cols-2 lg:grid-cols-4">
           <HeadlineTextElement headline="Tiefenreinigung" imgSrc="/assets/images/vortech-licht-0ffd2f2549.jpg">
             Aufgrund der hohen Saugleistung des VORTECH FORCE und den Vibrationen der Motorbürste kann sogar Sand und grober Staub aus tief liegenden Schichten von Polstern und Matratzen gesaugt werden.
           </HeadlineTextElement>
@@ -21,9 +23,9 @@ function VortechForce(): JSX.Element {
           </HeadlineTextElement>
         </div>
       </PageSection>
-      <PageSection headline="Das 4 Phasen Filtersystem" id="filtersystem" subSection={true} className="bg-gray-200 dark:bg-gray-900 pb-2">
+      <PageSection headline="Das 4 Phasen Filtersystem" id="filtersystem" subSection={true} className="bg-gray-200 pb-2 dark:bg-gray-900">
         <div>Alle Zubehörteile sind mit Spezial-Verriegelungselementen für ein bequemes und schnelles Austauschen versehen.</div>
-        <div className="grid grid-cols-1 gap-6 my-6 sm:my-8 sm:grid-cols-2 lg:grid-cols-4 auto-rows-fr">
+        <div className="my-6 grid auto-rows-fr grid-cols-1 gap-6 sm:my-8 sm:grid-cols-2 lg:grid-cols-4">
           <HeadlineTextElement headline="1. Papierfiltertüte" imgSrc="/assets/images/vortech-papierfiltertuete-33713352c3.jpg">
             Die Papierfiltertüte kann einfach, schnell und sauber ersetzt werden. Die Papierfiltertüte sollte nicht entleert und nochmals zu verwendet werden, ansonsten können sich die Poren verschließen, wodurch die Leistung gemindert
             wird.
@@ -41,7 +43,7 @@ function VortechForce(): JSX.Element {
       </PageSection>
       <PageSection headline="Zubehör" id="zubehoer" subSection={true}>
         <div>Alle Zubehörteile sind mit Spezial-Verriegelungselementen für ein bequemes und schnelles Austauschen versehen.</div>
-        <div className="grid grid-cols-1 gap-6 my-6 sm:my-8 sm:grid-cols-2 lg:grid-cols-4 auto-rows-fr">
+        <div className="my-6 grid auto-rows-fr grid-cols-1 gap-6 sm:my-8 sm:grid-cols-2 lg:grid-cols-4">
           <HeadlineTextElement headline="Motorbürste" imgSrc="/assets/images/vortech-licht-0ffd2f2549.jpg">
             Durch die Vibrationen der Motorbürste kann Sand und grober Staub aus tief liegenden Schichten von Teppichen, Polstermöbel und Matratzen gesaugt werden. Bitte nur mit dem Elektroschlauch benutzen.
           </HeadlineTextElement>

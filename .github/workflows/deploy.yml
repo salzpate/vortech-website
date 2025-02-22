@@ -6,21 +6,21 @@ on:
 
 env:
   FTP_LOCAL_DIR: './out/'
-  NODE_VERSION: '18.x'
+  NODE_VERSION: '22.x'
 
 jobs:
   build-and-deploy:
     name: Build and Deploy
     runs-on: ubuntu-latest
     steps:
-    - uses: actions/checkout@v3
+    - uses: actions/checkout@v4
     - name: Get npm cache
-      uses: actions/cache@v3
+      uses: actions/cache@v4
       with:
         path: ${{ github.workspace }}/.next/cache
         key: ${{ runner.os }}-nextjs-${{ hashFiles('**/package-lock.json') }}
     - name: Use Node.js ${{ env.NODE_VERSION }}
-      uses: actions/setup-node@v3
+      uses: actions/setup-node@v4
       with:
         node-version: ${{ env.NODE_VERSION }}
     - name: Authenticate with GitHub package registry
@@ -32,7 +32,7 @@ jobs:
         npm run export --if-present
         npm run sitemap --if-present
     - name: FTP Deploy
-      uses: SamKirkland/FTP-Deploy-Action@4.3.2
+      uses: SamKirkland/FTP-Deploy-Action@4.3.5
       with:
         server: ${{ secrets.FTP_SERVER }}
         username: ${{ secrets.FTP_USERNAME }}

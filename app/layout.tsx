@@ -3,10 +3,11 @@ import { JSX, PropsWithChildren } from 'react';
 import { Metadata } from 'next';
 import { MenuData } from '@/data/MenuData';
 import { SITE_DESC, SITE_TITLE } from '@/lib/constants';
-import '@/styles/tailwind.css';
-import '@/styles/globals.css';
-import { Footer } from '@salzpate/react-ui';
 import { SnackBarProvider } from '@/components/SnackBar';
+
+import '@salzpate/react-ui/dist/style.css';
+import '@/styles/globals.css';
+import { Footer } from '@/components/Footer';
 
 const footerText = '© Elfi Krammer - VORTECH FORCE Generalimport - Am Hügel 3 - 93089 Aufhausen - +49 9454 9498523';
 

@@ -1,77 +1,102 @@
 .activated,
 .navbarlink {
-  @apply font-light;
-  @apply relative;
-  @apply text-header-color;
-  @apply text-sm;
-  @apply tracking-widest;
-  @apply uppercase;
-  @apply transition-all;
-  @apply duration-300;
-  @apply ease-in-out;
+  --tw-font-weight: var(--font-weight-light);
+  --tw-tracking: var(--tracking-widest);
+  --tw-duration: 300ms;
+  --tw-ease: var(--ease-in-out);
+  color: rgba(23, 23, 23, 1);
+  font-size: var(--text-sm);
+  font-weight: var(--font-weight-light);
+  letter-spacing: var(--tracking-widest);
+  line-height: var(--tw-leading, var(--text-sm--line-height));
+  position: relative;
+  text-transform: uppercase;
+  transition-duration: var(--tw-duration, var(--default-transition-duration));
+  transition-duration: 300ms;
+  transition-property: all;
+  transition-timing-function: var(--tw-ease, var(--default-transition-timing-function));
+  transition-timing-function: var(--ease-in-out);
 }
 
 .activated {
-  @apply text-secondary;
+  color: var(--color-secondary);
 }
 
 .activated::before,
 .navbarlink::before {
-  @apply absolute;
-  @apply bg-secondary;
-  @apply opacity-0;
-  @apply w-0;
-  @apply transition-all;
-  @apply duration-300;
-  @apply ease-in-out;
+  --tw-font-weight: var(--font-weight-light);
+  --tw-tracking: var(--tracking-widest);
+  --tw-duration: 300ms;
+  --tw-ease: var(--ease-in-out);
+  background-color: var(--color-secondary);
   bottom: -8px;
   content: "";
   height: 2px;
   margin: 2px 0 0;
+  opacity: 0%;
+  position: absolute;
+  transition-duration: var(--tw-duration, var(--default-transition-duration));
+  transition-duration: 300ms;
+  transition-property: all;
+  transition-timing-function: var(--tw-ease, var(--default-transition-timing-function));
+  transition-timing-function: var(--ease-in-out);
+  width: calc(var(--spacing) * 0);
 }
 
 .activated:before {
-  @apply opacity-100;
-  @apply w-full;
+  opacity: 100%;
+  width: 100%;
 }
 
 .activated:hover,
 .navbarlink:hover {
-  @apply opacity-75;
-  @apply text-secondary;
-  @apply transition-all;
-  @apply duration-300;
-  @apply ease-in-out;
+  --tw-font-weight: var(--font-weight-light);
+  --tw-tracking: var(--tracking-widest);
+  --tw-duration: 300ms;
+  --tw-ease: var(--ease-in-out);
+  color: var(--color-secondary);
+  opacity: 75%;
+  transition-duration: var(--tw-duration, var(--default-transition-duration));
+  transition-duration: 300ms;
+  transition-property: all;
+  transition-timing-function: var(--tw-ease, var(--default-transition-timing-function));
+  transition-timing-function: var(--ease-in-out);
 }
 
 .activated:hover::before,
 .navbarlink:hover::before {
-  @apply opacity-75;
-  @apply text-secondary;
-  @apply w-full;
-  @apply transition-all;
-  @apply duration-300;
-  @apply ease-in-out;
+  --tw-font-weight: var(--font-weight-light);
+  --tw-tracking: var(--tracking-widest);
+  --tw-duration: 300ms;
+  --tw-ease: var(--ease-in-out);
+  color: var(--color-secondary);
+  opacity: 75%;
+  transition-duration: var(--tw-duration, var(--default-transition-duration));
+  transition-duration: 300ms;
+  transition-property: all;
+  transition-timing-function: var(--tw-ease, var(--default-transition-timing-function));
+  transition-timing-function: var(--ease-in-out);
+  width: 100%;
 }
 
 @media (prefers-color-scheme: dark) {
   .navbarlink {
-    @apply text-gray-300;
+    color: var(--color-gray-300);
   }
 
   .activated {
-    @apply text-secondary-dark;
+    color: var(--color-secondary-dark);
   }
 
   .activated::before,
   .navbarlink::before {
-    @apply bg-secondary-dark;
+    background-color: var(--color-secondary-dark);
   }
 
   .activated:hover,
   .activated:hover::before,
   .navbarlink:hover::before,
   .navbarlink:hover {
-    @apply text-secondary-dark;
+    color: var(--color-secondary-dark);
   }
 }

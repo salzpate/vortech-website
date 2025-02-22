@@ -1,22 +1,21 @@
+'use client';
+
 import { JSX } from 'react';
-import ContactForm from '@/components/Contact/ContactForm';
 import HeaderImage from '@/components/Header/HeaderImage';
 import HeaderMainLayout from '@/components/HeaderMainLayout';
 import styles from '@/styles/index.module.css';
 import { ContactCard, MoreLink, PageSection } from '@salzpate/react-ui';
+import ContactForm from '@/components/Contact/ContactForm';
 
 function Home(): JSX.Element {
   return (
     <HeaderMainLayout>
       <HeaderImage text1="Die Kraft der Natur" text2="Die Stärke der Technologie" imageClass={styles.headerimage} />
       <PageSection headline="Elfi Krammer - VORTECH FORCE Generalimport" id="index" className="page-section">
-        <div>Wir bieten Beratung, Direktvertrieb und Kundendienst für VORTECH FORCE und THERMOSTAR an. Für uns die perfekte Kombination für ein sauberes Zuhause nach industriellen Standards.</div>
+        <div>Wir bieten Beratung, Direktvertrieb und Kundendienst für VORTECH FORCE in Deutschland an. Für ein sauberes Zuhause nach industriellen Standards.</div>
         <div className="grid grid-cols-1 gap-6 my-6 sm:my-8 sm:grid-cols-2">
           <MoreLink href="/vortech-force/" headline="VORTECH FORCE" imgSrc="/assets/images/vortech-geraet-schlauch-f4f3c86daf.jpg">
             Der VORTECH FORCE, ein innovatives Staub- und Luftreinigungssystem, welches besonders für Allergiker geeignet ist.
-          </MoreLink>
-          <MoreLink href="/thermostar/" headline="THERMOSTAR" imgSrc="/assets/images/thermostar-geraet-schlauch-d4ae1e7ff1.jpg">
-            Der THERMOSTAR, ein einzigartiges Trocken-Dampfreinigungsgerät, welches ohne Chemikalien hygienisch reinigt.
           </MoreLink>
         </div>
       </PageSection>

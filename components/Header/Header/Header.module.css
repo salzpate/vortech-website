@@ -1,17 +1,17 @@
 .headlogo {
-  @apply block;
   background-image: url('/assets/images/logo-7ddb1f8f39.jpg');
   background-size: 226px 48px;
+  display: block;
   height: 48px;
   width: 226px;
 }
 
 .headlogoSide {
-  @apply block;
-  @apply mx-auto;
   background-image: url('/assets/images/logo-7ddb1f8f39.png');
   background-size: 226px 48px;
+  display: block;
   height: 48px;
+  margin-inline: auto;
   width: 226px;
 }
 

@@ -1,6 +1,6 @@
 'use client';
 
-import React, { createContext, ReactNode, useContext, useState } from 'react';
+import { JSX, createContext, ReactNode, useContext, useState } from 'react';
 import { SnackBar, SnackBarTypes } from '@salzpate/react-ui';
 
 export const defaultDuration = 500;
@@ -15,8 +15,8 @@ export type SnackBarContextType = {
   closeSnackbar: () => void;
 };
 
-function createCtx<ContextType extends unknown | null>() {
-  const ctx = createContext<ContextType | null>(null);
+function createCtx<ContextType>(): readonly [() => ContextType, React.Provider<ContextType | undefined>] {
+  const ctx = createContext<ContextType | undefined>(undefined);
   function useCtx() {
     const c = useContext(ctx);
     if (!c) throw new Error('useCtx must be inside a Provider with a value');
@@ -27,7 +27,7 @@ function createCtx<ContextType extends unknown | null>() {
 
 const [useSnackBar, CtxProvider] = createCtx<SnackBarContextType>();
 
-function SnackBarProvider(props: SnackBarProviderProps): JSX.Element {
+function SnackBarProvider(props: Readonly<SnackBarProviderProps>): JSX.Element {
   const [isOpen, setIsOpen] = useState(false);
   const [timeoutId, setTimeoutId] = useState(
     setTimeout(() => {

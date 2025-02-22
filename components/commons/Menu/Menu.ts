@@ -13,7 +13,7 @@ export interface ActiveMenuItem {
   activeMenu?: string;
 }
 
-export interface NavMenu extends NavMenuItem, ActiveMenuItem {}
+export interface NavMenu extends NavMenuItem, ActiveMenuItem { }
 
 export interface AppMenu {
   main: NavMenuItem[];

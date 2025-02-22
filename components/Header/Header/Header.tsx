@@ -1,18 +1,18 @@
 'use client';
 
+import { JSX, useState } from 'react';
 import { ActiveMenuItem, NavMenuItem } from '@/components/commons/Menu/Menu';
 import NavBarLink from '@/components/Header/NavBarLink';
 import { NavLink } from '@salzpate/react-ui';
 import cn from 'classnames';
 import Link from 'next/link';
-import { useState } from 'react';
 import styles from './Header.module.css';
 
 interface HeaderProps extends ActiveMenuItem {
   navMenuItems: NavMenuItem[];
 }
 
-function Header(props: HeaderProps): JSX.Element {
+function Header(props: Readonly<HeaderProps>): JSX.Element {
   const [isOn, setIsOn] = useState(false);
   const { activeMenu, navMenuItems } = props;
 
@@ -43,7 +43,7 @@ function Header(props: HeaderProps): JSX.Element {
             </div>
             <div className="-mr-2 flex md:hidden">
               <button
-                className="inline-flex items-center justify-center p-2 rounded-full text-header-color ease-in-out transition-all duration-300 hover:opacity-75 hover:bg-black dark:text-white dark:text-opacity-87"
+                className="inline-flex items-center justify-center p-2 rounded-full text-header-color ease-in-out transition-all duration-300 hover:opacity-75 hover:bg-black dark:text-white/87"
                 onClick={() => setIsOn(true)}
               >
                 <svg className="block h-6 w-6" stroke="currentColor" fill="none" viewBox="0 0 24 24">
@@ -79,7 +79,7 @@ function Header(props: HeaderProps): JSX.Element {
         </span>
         {navMenuItems.map((item, i) => {
           return (
-            <span key={i} className="flex mb-1 px-2">
+            <span key={`link-${item.href.toString()}`} className="flex mb-1 px-2">
               <NavLink href={item.href} activeMenuName={item.activeMenuName} activeMenu={activeMenu}>
                 {item.children}
               </NavLink>

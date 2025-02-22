@@ -1,17 +1,36 @@
+/* stylelint-disable at-rule-no-unknown */
+
+@import "tailwindcss";
+
+@theme {
+  --color-primary: #ffffff;
+  --color-secondary: #8b2000;
+  --color-secondary-dark: #f44336;
+  --color-header: rgba(23, 23, 23, 1);
+  --color-link: #8b2000;
+  --color-link-dark: #f44336;
+  --color-link-dark-hover: #f44336;
+  --color-heading: rgba(23, 23, 23, 1);
+  --color-heading-dark: #ffffff;
+  --color-paragraph: #101828;
+  --color-paragraph-dark: #d1d5dc;
+  --color-alternate:  #007cc2;
+}
+
 :target {
-  @apply block;
-  @apply relative;
+  display: block;
+  position: relative;
   top: -92px;
   visibility: hidden;
 }
 
 html,
 body {
-  @apply h-full;
+  height: 100%;
 }
 
 body {
-  @apply font-sans;
+  font-family: var(--font-sans);
 }
 
 #__next {
@@ -20,35 +39,9 @@ body {
   height: 100%;
 }
 
-.page-section a {
-  @apply duration-150;
-  @apply ease-in-out;
-  @apply no-underline;
-  @apply text-secondary;
-  @apply transition-all;
-}
-
-.page-section a:hover,
-.page-section a:hover img {
-  @apply duration-150;
-  @apply ease-in-out;
-  @apply opacity-75;
-  @apply transition-all;
-  @apply underline;
-  text-decoration-style: dotted;
-}
-
-a.button-link:hover {
-  @apply no-underline;
-}
-
 @media (prefers-color-scheme: dark) {
   body {
-    @apply bg-black;
-  }
-
-  .page-section a {
-    @apply text-secondary-dark;
+    background-color: black;
   }
 
   .images-dark {

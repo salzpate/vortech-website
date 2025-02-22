@@ -1,54 +1,56 @@
 .mailtext {
-  @apply hidden;
+  display: none;
 }
 
 .formfield {
-  @apply flex;
-  @apply flex-col-reverse;
-  @apply w-full;
-  @apply mb-2;
+  display: flex;
+  flex-direction: column-reverse;
+  margin-bottom: calc(var(--spacing) * 2);
+  width: 100%
 }
 
 .checkboxfield {
-  @apply flex;
-  @apply w-full;
+  display: flex;
+  width: 100%;
 }
 
 .textinput,
 .textinputwhite,
 .textinputerror {
-  @apply appearance-none;
-  @apply bg-gray-100;
-  @apply block;
-  @apply border;
-  @apply leading-tight;
-  @apply mb-3;
-  @apply px-4;
-  @apply py-3;
-  @apply rounded;
-  @apply text-gray-800;
-  @apply w-full;
-  @apply transition;
-  @apply ease-in-out;
-  @apply duration-150;
+  appearance: none;
+  background-color: var(--color-gray-100);
+  border-radius: 0.25rem;
+  border-style: var(--tw-border-style);
+  border-width: 1px;
+  color: var(--color-gray-800);
+  display: block;
+  line-height: var(--leading-tight);
+  margin-bottom: calc(var(--spacing) * 3);
+  padding-block: calc(var(--spacing) * 3);
+  padding-inline: calc(var(--spacing) * 4);
+  transition-duration: var(--tw-duration, var(--default-transition-duration));
+  transition-duration: 150ms;
+  transition-property: color, background-color, border-color, outline-color, text-decoration-color, fill, stroke, --tw-gradient-from, --tw-gradient-via, --tw-gradient-to, opacity, box-shadow, transform, translate, scale, rotate, filter, -webkit-backdrop-filter, backdrop-filter;
+  transition-timing-function: var(--ease-in-out);
+  width: 100%;
 }
 
 .textinput,
 .textinputerror {
-  @apply bg-gray-100;
+  background-color: var(--color-gray-100);
 }
 
 .textinput,
 .textinputwhite {
-  @apply border-gray-500;
+  border-color: var(--color-gray-500);
 }
 
 .textinputwhite {
-  @apply bg-white;
+  background-color: var(--color-white);
 }
 
 .textinputerror {
-  @apply border-red-700;
+  border-color: var(--color-red-700);
 }
 
 .textinput:focus,
@@ -57,8 +59,8 @@
 .textinputwhite:hover,
 .textinputerror:focus,
 .textinputerror:hover {
-  @apply border-secondary;
-  @apply outline-none;
+  border-color: var(--secondary);
+  outline-style: none;
 }
 
 .textinput:focus + label,
@@ -67,12 +69,12 @@
 .textinputwhite:hover + label,
 .textinputerror:focus + label,
 .textinputerror:hover + label {
-  @apply text-secondary;
+  color: var(--secondary);
 }
 
 .checkbox {
-  @apply absolute;
-  @apply opacity-0;
+  opacity: 0%;
+  position: absolute;
 }
 
 .checkbox:checked + svg {
@@ -83,12 +85,12 @@
   .textinput,
   .textinputwhite,
   .textinputerror {
-    @apply bg-black;
-    @apply text-gray-300;
+    background-color: var(--color-black);
+    color: var(--color-gray-300);
   }
 
   .textinputerror {
-    @apply border-red-500;
+    border-color: var(--color-red-500);
   }
 
   .textinput:focus,
@@ -97,7 +99,7 @@
   .textinputwhite:hover,
   .textinputerror:focus,
   .textinputerror:hover {
-    @apply border-secondary-dark;
+    border-color: var(--secondary-dark);
   }
 
   .textinput:focus + label,
@@ -106,6 +108,6 @@
   .textinputwhite:hover + label,
   .textinputerror:focus + label,
   .textinputerror:hover + label {
-    @apply text-secondary-dark;
+    color: var(--secondary-dark);
   }
 }

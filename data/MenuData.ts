@@ -8,11 +8,6 @@ export const MenuData: AppMenu = {
       activeMenuName: 'vortech',
     },
     {
-      children: 'Thermostar',
-      href: '/thermostar/',
-      activeMenuName: 'thermostar',
-    },
-    {
       children: 'Kontakt',
       href: '/kontakt/',
       activeMenuName: 'kontakt',

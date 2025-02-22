@@ -1,10 +1,12 @@
+'use client';
+
 import { JSX } from 'react';
-import { PageSection } from '@salzpate/react-ui';
+import { PageLink, PageSection } from '@salzpate/react-ui';
 
 function Impressum(): JSX.Element {
   return (
     <PageSection headline="Impressum" id="impressum">
-      <div className="pb-8 page-section">
+      <div className="page-section pb-8">
         Elfi Krammer
         <br />
         VORTECH FORCE Generalimport
@@ -14,21 +16,21 @@ function Impressum(): JSX.Element {
         93089 Aufhausen
         <br />
         <br />
-        Telefon: <a href="tel:+4994549498523">+49 9454 9498523</a>
+        Telefon: <PageLink href="tel:+4994549498523">+49 9454 9498523</PageLink>
         <br />
-        Telefax: <a href="tel:+4994549498521">+49 9454 9498521</a>
+        Telefax: <PageLink href="tel:+4994549498521">+49 9454 9498521</PageLink>
         <br />
         E-Mail:{' '}
-        <a href="/lib/mailto.php" rel="nofollow noreferrer">
+        <PageLink href="/lib/mailto.php" rel="nofollow noreferrer">
           info<span className="hidden">beuro</span>@vortech-force-krammer.de
-        </a>
+        </PageLink>
         <br />
         <br />
         Steuernummer: 244 / 239 / 80261
         <br />
         <br />
         <br />
-        <h2 className="uppercase text-3xl dark:text-gray-200">Disclaimer – rechtliche Hinweise</h2>
+        <h2 className="text-3xl uppercase dark:text-gray-200">Disclaimer – rechtliche Hinweise</h2>
         <br />§ 1 Warnhinweis zu Inhalten
         <br />
         Die kostenlosen und frei zugänglichen Inhalte dieser Webseite wurden mit größtmöglicher Sorgfalt erstellt. Der Anbieter dieser Webseite übernimmt jedoch keine Gewähr für die Richtigkeit und Aktualität der bereitgestellten
@@ -59,9 +61,9 @@ function Impressum(): JSX.Element {
         <br />
         <br />
         Quelle:{' '}
-        <a href="https://www.juraforum.de/impressum-generator/" target="_blank" rel="nofollow noreferrer">
+        <PageLink href="https://www.juraforum.de/impressum-generator/" target="_blank" rel="nofollow noreferrer">
           Impressum Generator von JuraForum.de
-        </a>
+        </PageLink>
       </div>
     </PageSection>
   );
