@@ -18,9 +18,9 @@ function Header(props: Readonly<HeaderProps>): JSX.Element {
 
   return (
     <>
-      <header className="bg-white fixed z-10 w-full dark:bg-gray-900">
-        <nav className="max-w-screen-xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="flex items-center justify-between h-14 sm:h-16">
+      <header className="fixed z-10 w-full bg-white dark:bg-gray-900">
+        <nav className="mx-auto max-w-screen-xl px-4 sm:px-6 lg:px-8">
+          <div className="flex h-14 items-center justify-between sm:h-16">
             <div className="flex items-center">
               <div className="shrink-0">
                 <Link href="/" legacyBehavior>
@@ -42,10 +42,7 @@ function Header(props: Readonly<HeaderProps>): JSX.Element {
               </div>
             </div>
             <div className="-mr-2 flex md:hidden">
-              <button
-                className="inline-flex items-center justify-center p-2 rounded-full text-header-color ease-in-out transition-all duration-300 hover:opacity-75 hover:bg-black dark:text-white/87"
-                onClick={() => setIsOn(true)}
-              >
+              <button className="text-header-color inline-flex items-center justify-center rounded-full p-2 transition-all duration-300 ease-in-out hover:bg-black hover:opacity-75 dark:text-white/87" onClick={() => setIsOn(true)}>
                 <svg className="block h-6 w-6" stroke="currentColor" fill="none" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4 6h16M4 12h16M4 18h16" />
                 </svg>
@@ -59,7 +56,7 @@ function Header(props: Readonly<HeaderProps>): JSX.Element {
       </header>
       <div
         aria-hidden="true"
-        className={cn('z-10 fixed inset-0 transition-opacity', { hidden: !isOn })}
+        className={cn('fixed inset-0 z-10 transition-opacity', { hidden: !isOn })}
         onClick={() => setIsOn(false)}
         onKeyDown={(event: React.KeyboardEvent<HTMLDivElement>) => {
           if (event.key === 'Enter' || event.key === 'Escape') {
@@ -69,7 +66,7 @@ function Header(props: Readonly<HeaderProps>): JSX.Element {
       >
         <div className="absolute inset-0 bg-black opacity-25"></div>
       </div>
-      <aside className={cn('transform top-0 left-0 w-64 bg-gray-100 shadow-xl fixed h-full overflow-auto ease-in-out transition-all duration-300 z-30 dark:bg-gray-900', { 'translate-x-0': isOn }, { '-translate-x-full': !isOn })}>
+      <aside className={cn('fixed top-0 left-0 z-30 h-full w-64 transform overflow-auto bg-gray-100 shadow-xl transition-all duration-300 ease-in-out dark:bg-gray-900', { 'translate-x-0': isOn }, { '-translate-x-full': !isOn })}>
         <span className="flex w-full items-center p-4">
           <Link href="/" legacyBehavior>
             <a className={styles.headlogoSide} tabIndex={-1}>
@@ -77,9 +74,9 @@ function Header(props: Readonly<HeaderProps>): JSX.Element {
             </a>
           </Link>
         </span>
-        {navMenuItems.map((item) => {
+        {navMenuItems.map(item => {
           return (
-            <span key={`link-${item.href.toString()}`} className="flex mb-1 px-2">
+            <span key={`link-${item.href.toString()}`} className="mb-1 flex px-2">
               <NavLink href={item.href} activeMenuName={item.activeMenuName} activeMenu={activeMenu}>
                 {item.children}
               </NavLink>

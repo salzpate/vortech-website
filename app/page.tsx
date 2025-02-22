@@ -13,15 +13,15 @@ function Home(): JSX.Element {
       <HeaderImage text1="Die Kraft der Natur" text2="Die Stärke der Technologie" imageClass={styles.headerimage} />
       <PageSection headline="Elfi Krammer - VORTECH FORCE Generalimport" id="index" className="page-section">
         <div>Wir bieten Beratung, Direktvertrieb und Kundendienst für VORTECH FORCE in Deutschland an. Für ein sauberes Zuhause nach industriellen Standards.</div>
-        <div className="grid grid-cols-1 gap-6 my-6 sm:my-8 sm:grid-cols-2">
+        <div className="my-6 grid grid-cols-1 gap-6 sm:my-8 sm:grid-cols-2">
           <MoreLink href="/vortech-force/" headline="VORTECH FORCE" imgSrc="/assets/images/vortech-geraet-schlauch-f4f3c86daf.jpg">
             Der VORTECH FORCE, ein innovatives Staub- und Luftreinigungssystem, welches besonders für Allergiker geeignet ist.
           </MoreLink>
         </div>
       </PageSection>
-      <PageSection headline="Kontakt" id="kontakt" subSection={true} className="bg-gray-200 dark:bg-gray-900 pb-6 sm:pb-8 page-section">
+      <PageSection headline="Kontakt" id="kontakt" subSection={true} className="page-section bg-gray-200 pb-6 sm:pb-8 dark:bg-gray-900">
         <div>Haben Sie interesse an einer Produktvorstellung? Wollen Sie Zubehör bestellen oder benötigen Sie einen Kundendienst?</div>
-        <div className="grid grid-cols-1 gap-6 mt-6 sm:mt-8 sm:grid-cols-3">
+        <div className="mt-6 grid grid-cols-1 gap-6 sm:mt-8 sm:grid-cols-3">
           <div>
             <ContactCard
               name="Elfi Krammer"

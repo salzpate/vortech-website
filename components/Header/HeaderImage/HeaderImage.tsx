@@ -13,18 +13,18 @@ function HeaderImage(props: PropsWithChildren<HeaderImageProps>): JSX.Element {
   const { imageClass, text1, text2, alternate = false, children } = props;
 
   if (children) {
-    return <div className={cn(styles.headerimage, 'bg-no-repeat bg-cover bg-center bg-scroll bg-transparent', imageClass)}>{children}</div>;
+    return <div className={cn(styles.headerimage, 'bg-transparent bg-cover bg-scroll bg-center bg-no-repeat', imageClass)}>{children}</div>;
   } else {
     return (
-      <div className={cn(styles.headerimage, 'bg-no-repeat bg-cover bg-center bg-scroll bg-transparent', imageClass)}>
-        <section className="w-full absolute">
-          <div className="max-w-screen-xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div className={cn(styles.headerimage, 'bg-transparent bg-cover bg-scroll bg-center bg-no-repeat', imageClass)}>
+        <section className="absolute w-full">
+          <div className="mx-auto max-w-screen-xl px-4 sm:px-6 lg:px-8">
             <div className="relative mt-14 sm:mt-32">
               <div className="pr-16 text-right">
-                <span className={cn('uppercase text-white px-6 text-xl tracking-tight font-bold sm:text-3xl lg:text-4xl', { 'bg-secondary': !alternate }, { 'bg-alternate': alternate })}>{text1}</span>
+                <span className={cn('px-6 text-xl font-bold tracking-tight text-white uppercase sm:text-3xl lg:text-4xl', { 'bg-secondary': !alternate }, { 'bg-alternate': alternate })}>{text1}</span>
               </div>
-              <div className="pr-6 mt-3 sm:mt-4 text-right">
-                <span className={cn('uppercase text-white px-6 text-xl tracking-tight font-bold sm:text-3xl lg:text-4xl', { 'bg-secondary': !alternate }, { 'bg-alternate': alternate })}>{text2}</span>
+              <div className="mt-3 pr-6 text-right sm:mt-4">
+                <span className={cn('px-6 text-xl font-bold tracking-tight text-white uppercase sm:text-3xl lg:text-4xl', { 'bg-secondary': !alternate }, { 'bg-alternate': alternate })}>{text2}</span>
               </div>
             </div>
           </div>

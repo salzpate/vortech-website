@@ -16,11 +16,11 @@ function FileNotFound(): JSX.Element {
       <HeaderImage text1="Die Kraft der Natur" text2="Die Stärke der Technologie" imageClass={styles.headerimage} />
       <PageSection headline="Seite nicht gefunden" id="notfound">
         <div>Die gewünschte Seite wurde nicht gefunden.</div>
-        <div className="bg-yellow-400 rounded-sm p-8 my-16">
+        <div className="my-16 rounded-sm bg-yellow-400 p-8">
           <Link href="/" legacyBehavior>
-            <a className="inline-flex items-center gap-0 text-yellow-800 hover:underline hover:gap-1">
+            <a className="inline-flex items-center gap-0 text-yellow-800 hover:gap-1 hover:underline">
               <span>Weiter zur Startseite</span>{' '}
-              <svg className="w-3 h-3 ml-1" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <svg className="ml-1 h-3 w-3" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
               </svg>
             </a>

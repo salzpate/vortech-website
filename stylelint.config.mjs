@@ -1,36 +1,28 @@
 /* eslint-disable import/no-anonymous-default-export */
 /** @type {import('stylelint').Config} */
 export default {
-  "extends": ["stylelint-config-recommended", "stylelint-prettier/recommended"],
-  "plugins": ["stylelint-order", "stylelint-prettier"],
-  "rules": {
-    "font-family-no-missing-generic-family-keyword": [
+  extends: ['stylelint-config-recommended', 'stylelint-prettier/recommended'],
+  plugins: ['stylelint-order', 'stylelint-prettier'],
+  rules: {
+    'font-family-no-missing-generic-family-keyword': [
       true,
       {
-        "ignoreFontFamilies": ["Icons"]
-      }
+        ignoreFontFamilies: ['Icons'],
+      },
     ],
-    "property-no-unknown": [
+    'property-no-unknown': [
       true,
       {
-        "ignoreProperties": [
-          "box-orient"
-        ]
-      }
+        ignoreProperties: ['box-orient'],
+      },
     ],
-    "at-rule-no-unknown": [
+    'at-rule-no-unknown': [
       true,
       {
-        "ignoreAtRules": [
-          "tailwind",
-          "apply",
-          "variants",
-          "responsive",
-          "screen"
-        ]
-      }
+        ignoreAtRules: ['tailwind', 'apply', 'variants', 'responsive', 'screen'],
+      },
     ],
-    "order/properties-alphabetical-order": true,
-    "prettier/prettier": true
-  }
-}
+    'order/properties-alphabetical-order': true,
+    'prettier/prettier': true,
+  },
+};

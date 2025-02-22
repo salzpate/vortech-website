@@ -11,7 +11,7 @@
     "build": "next build",
     "lint": "next lint",
     "lint:style": "npx stylelint '**/*.css' --fix",
-    "prettier": "npx prettier --write **/**/*.tsx",
+    "prettier": "npx prettier --write .",
     "start": "next start"
   },
   "dependencies": {
