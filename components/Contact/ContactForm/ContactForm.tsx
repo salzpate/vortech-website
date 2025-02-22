@@ -111,7 +111,11 @@ function ContactForm(props: Readonly<ContactFormProps>): JSX.Element {
       </div>
       {errors.datenschutz && errors.datenschutz.type === 'required' && <div className="-mt-2 mb-2 text-right text-xs text-red-700 dark:text-red-500">Die Datenschutzerklärung muss als gelesen bestätigt werden.</div>}
       <div className="my-4 text-right">
-        <button type="submit" disabled={isSubmitting} className="rounded-sm bg-secondary px-8 py-2 text-sm tracking-wider text-gray-200 uppercase transition duration-150 ease-in-out hover:bg-secondary/75 dark:bg-secondary-dark">
+        <button
+          type="submit"
+          disabled={isSubmitting}
+          className="cursor-pointer rounded-sm bg-secondary px-8 py-2 text-sm tracking-wider text-gray-200 uppercase transition duration-150 ease-in-out hover:bg-secondary/75 dark:bg-secondary-dark"
+        >
           Senden
         </button>
       </div>
