@@ -1,4 +1,3 @@
-/* eslint-disable @next/next/no-page-custom-font */
 import { JSX, PropsWithChildren } from 'react';
 import { Metadata } from 'next';
 import { MenuData } from '@/data/MenuData';

@@ -1,4 +1,3 @@
-/* eslint-disable @next/next/no-page-custom-font */
 import { JSX, PropsWithChildren } from 'react';
 import Header from '@/components/Header';
 import { MenuData } from '@/data/MenuData';
