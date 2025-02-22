@@ -12,6 +12,10 @@ export default function sitemap(): MetadataRoute.Sitemap {
       lastModified: new Date(),
     },
     {
+      url: `${SITE_URL}/thermostar/`,
+      lastModified: new Date(),
+    },
+    {
       url: `${SITE_URL}/kontakt/`,
       lastModified: new Date(),
     },
