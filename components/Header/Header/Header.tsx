@@ -77,7 +77,7 @@ function Header(props: Readonly<HeaderProps>): JSX.Element {
             </a>
           </Link>
         </span>
-        {navMenuItems.map((item, i) => {
+        {navMenuItems.map((item) => {
           return (
             <span key={`link-${item.href.toString()}`} className="flex mb-1 px-2">
               <NavLink href={item.href} activeMenuName={item.activeMenuName} activeMenu={activeMenu}>
