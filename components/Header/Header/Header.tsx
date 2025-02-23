@@ -23,10 +23,8 @@ function Header(props: Readonly<HeaderProps>): JSX.Element {
           <div className="flex h-14 items-center justify-between sm:h-16">
             <div className="flex items-center">
               <div className="shrink-0">
-                <Link href="/" legacyBehavior>
-                  <a className={styles.headlogo} tabIndex={-1}>
-                    &nbsp;
-                  </a>
+                <Link href="/" className={styles.headlogo} tabIndex={-1}>
+                  &nbsp;
                 </Link>
               </div>
             </div>
@@ -68,10 +66,8 @@ function Header(props: Readonly<HeaderProps>): JSX.Element {
       </div>
       <aside className={cn('fixed top-0 left-0 z-30 h-full w-64 transform overflow-auto bg-gray-100 shadow-xl transition-all duration-300 ease-in-out dark:bg-gray-900', { 'translate-x-0': isOn }, { '-translate-x-full': !isOn })}>
         <span className="flex w-full items-center p-4">
-          <Link href="/" legacyBehavior>
-            <a className={styles.headlogoSide} tabIndex={-1}>
-              &nbsp;
-            </a>
+          <Link href="/" className={styles.headlogoSide} tabIndex={-1}>
+            &nbsp;
           </Link>
         </span>
         {navMenuItems.map(item => {
