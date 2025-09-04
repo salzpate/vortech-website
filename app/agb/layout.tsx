@@ -1,4 +1,4 @@
-import { JSX, PropsWithChildren } from 'react';
+import { JSX } from 'react';
 import { Metadata } from 'next';
 import HeaderMainLayout from '@/components/HeaderMainLayout/HeaderMainLayout';
 import { SITE_TITLE } from '@/lib/constants';
@@ -7,7 +7,7 @@ export const metadata: Metadata = {
   title: `AGB - ${SITE_TITLE}`,
 };
 
-function AGBLayout({ children }: PropsWithChildren<object>): JSX.Element {
+function AGBLayout({ children }: LayoutProps<'/agb'>): JSX.Element {
   return <HeaderMainLayout>{children}</HeaderMainLayout>;
 }
 
