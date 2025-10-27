@@ -1,14 +1,25 @@
-import { FlatCompat } from '@eslint/eslintrc';
-import js from '@eslint/js';
+import { defineConfig, globalIgnores } from 'eslint/config'
+import nextVitals from 'eslint-config-next/core-web-vitals'
+import nextTs from 'eslint-config-next/typescript'
+import prettier from 'eslint-config-prettier';
+import reactPlugin from 'eslint-plugin-react';
 
-const compat = new FlatCompat({
-  baseDirectory: import.meta.dirname,
-  recommendedConfig: js.configs.recommended,
-});
-
-const eslintConfig = [
-  ...compat.config({
-    extends: ['next', 'next/typescript', 'prettier'],
+const eslintConfig = defineConfig([
+  globalIgnores([
+    '.next/**',
+    'out/**',
+    'build/**',
+    'next-env.d.ts',
+    '!node_modules/',
+    '/dist/**',
+    'postcss.config.mjs',
+    '**/setupTests.ts'
+  ]),
+  ...nextVitals,
+  ...nextTs,
+  prettier,
+  {
+    extends: [reactPlugin.configs.flat.recommended, reactPlugin.configs.flat['jsx-runtime']],
     rules: {
       'import/extensions': 'off',
       'jsx-a11y/anchor-is-valid': 'off',
@@ -17,7 +28,7 @@ const eslintConfig = [
       'react/jsx-uses-react': 'off',
       'react/react-in-jsx-scope': 'off',
     },
-  }),
-];
+  },
+])
 
-export default eslintConfig;
+export default eslintConfig
