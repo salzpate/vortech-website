@@ -19,7 +19,7 @@ function Header(props: Readonly<HeaderProps>): JSX.Element {
   return (
     <>
       <header className="fixed z-10 w-full bg-white dark:bg-gray-900">
-        <nav className="mx-auto max-w-screen-xl px-4 sm:px-6 lg:px-8">
+        <nav className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <div className="flex h-14 items-center justify-between sm:h-16">
             <div className="flex items-center">
               <div className="shrink-0">
@@ -41,12 +41,16 @@ function Header(props: Readonly<HeaderProps>): JSX.Element {
             </div>
             <div className="-mr-2 flex md:hidden">
               <button className="text-header-color inline-flex items-center justify-center rounded-full p-2 transition-all duration-300 ease-in-out hover:bg-black hover:opacity-75 dark:text-white/87" onClick={() => setIsOn(true)}>
-                <svg className="block h-6 w-6" stroke="currentColor" fill="none" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4 6h16M4 12h16M4 18h16" />
-                </svg>
-                <svg className="hidden h-6 w-6" stroke="currentColor" fill="none" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M6 18L18 6M6 6l12 12" />
-                </svg>
+                {!isOn && (
+                  <svg className="block h-6 w-6" stroke="currentColor" fill="none" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4 6h16M4 12h16M4 18h16" />
+                  </svg>
+                )}
+                {isOn && (
+                  <svg className="block h-6 w-6" stroke="currentColor" fill="none" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M6 18L18 6M6 6l12 12" />
+                  </svg>
+                )}
               </button>
             </div>
           </div>
@@ -54,7 +58,7 @@ function Header(props: Readonly<HeaderProps>): JSX.Element {
       </header>
       <div
         aria-hidden="true"
-        className={cn('fixed inset-0 z-10 transition-opacity', { hidden: !isOn })}
+        className={cn('fixed inset-0 z-10 transition-opacity', { 'inset-0 hidden': !isOn })}
         onClick={() => setIsOn(false)}
         onKeyDown={(event: React.KeyboardEvent<HTMLDivElement>) => {
           if (event.key === 'Enter' || event.key === 'Escape') {
