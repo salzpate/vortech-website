@@ -18,7 +18,7 @@ function Datenschutz(): JSX.Element {
         Unsere Verantwortliche (nachfolgend &quot;Verantwortlicher&quot;) i.S.d. Art. 4 Zif. 7 DS-GVO ist:
         <br />
         <br />
-        Elfi Krammer
+        Elfi Bast
         <br />
         Am Hügel 3
         <br />
@@ -281,7 +281,7 @@ function Datenschutz(): JSX.Element {
               folgenden Kontaktdaten informieren:
               <br />
               <br />
-              Elfi Krammer
+              Elfi Bast
               <br />
               Am Hügel 3
               <br />

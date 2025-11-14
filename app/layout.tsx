@@ -8,7 +8,7 @@ import '@salzpate/react-ui/dist/style.css';
 import '@/styles/globals.css';
 import { Footer } from '@/components/Footer';
 
-const footerText = '© Elfi Krammer - VORTECH FORCE Generalimport - Am Hügel 3 - 93089 Aufhausen - +49 9454 9498523';
+const footerText = '© Elfi Bast - VORTECH FORCE Generalimport - Am Hügel 3 - 93089 Aufhausen - +49 9454 9498523';
 
 export const metadata: Metadata = {
   title: SITE_TITLE,

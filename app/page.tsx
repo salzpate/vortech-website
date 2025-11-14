@@ -11,7 +11,7 @@ function Home(): JSX.Element {
   return (
     <HeaderMainLayout>
       <HeaderImage text1="Die Kraft der Natur" text2="Die Stärke der Technologie" imageClass={styles.headerimage} />
-      <PageSection headline="Elfi Krammer - VORTECH FORCE Generalimport" id="index" className="page-section">
+      <PageSection headline="Elfi Bast - VORTECH FORCE Generalimport" id="index" className="page-section">
         <div>Wir bieten Beratung, Direktvertrieb und Kundendienst für VORTECH FORCE in Deutschland an. Für ein sauberes Zuhause nach industriellen Standards.</div>
         <div className="my-6 grid grid-cols-1 gap-6 sm:my-8 sm:grid-cols-2">
           <MoreLink href="/vortech-force/" headline="VORTECH FORCE" imgSrc="/assets/images/vortech-geraet-schlauch-f4f3c86daf.jpg">
@@ -24,7 +24,7 @@ function Home(): JSX.Element {
         <div className="mt-6 grid grid-cols-1 gap-6 sm:mt-8 sm:grid-cols-3">
           <div>
             <ContactCard
-              name="Elfi Krammer"
+              name="Elfi Bast"
               imageSrc="/assets/images/elfi-krammer-1413479a5b.jpg"
               email="info@vortech-force-krammer.de"
               phone="+49 9454 9498523"

@@ -7,7 +7,7 @@ function Impressum(): JSX.Element {
   return (
     <PageSection headline="Impressum" id="impressum">
       <div className="page-section pb-8">
-        Elfi Krammer
+        Elfi Bast
         <br />
         VORTECH FORCE Generalimport
         <br />
