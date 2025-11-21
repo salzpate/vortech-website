@@ -13,12 +13,16 @@ function HeaderImage(props: PropsWithChildren<HeaderImageProps>): JSX.Element {
   const { imageClass, text1, text2, alternate = false, children } = props;
 
   if (children) {
-    return <div className={cn(styles.headerimage, 'bg-transparent bg-cover bg-scroll bg-center bg-no-repeat', imageClass)}>{children}</div>;
+    return (
+      <div className={cn(styles.headerimage, 'bg-transparent bg-cover bg-scroll bg-center bg-no-repeat', imageClass)} aria-label="Header Bild">
+        {children}
+      </div>
+    );
   } else {
     return (
-      <div className={cn(styles.headerimage, 'bg-transparent bg-cover bg-scroll bg-center bg-no-repeat', imageClass)}>
-        <section className="absolute w-full">
-          <div className="mx-auto max-w-screen-xl px-4 sm:px-6 lg:px-8">
+      <div className={cn(styles.headerimage, 'bg-transparent bg-cover bg-scroll bg-center bg-no-repeat', imageClass)} aria-label="Header Bild">
+        <div className="absolute w-full">
+          <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
             <div className="relative mt-14 sm:mt-32">
               <div className="pr-16 text-right">
                 <span className={cn('px-6 text-xl font-bold tracking-tight text-white uppercase sm:text-3xl lg:text-4xl', { 'bg-secondary': !alternate }, { 'bg-alternate': alternate })}>{text1}</span>
@@ -28,7 +32,7 @@ function HeaderImage(props: PropsWithChildren<HeaderImageProps>): JSX.Element {
               </div>
             </div>
           </div>
-        </section>
+        </div>
       </div>
     );
   }
