@@ -14,7 +14,9 @@ function HeaderMainLayout(props: PropsWithChildren<HeaderMainLayoutProps>): JSX.
     <>
       <Header activeMenu={activeMenu} navMenuItems={navMenuItems} />
 
-      <main id="main-content" className="flex-1 pt-14 sm:pt-16">{children}</main>
+      <main id="main-content" className="flex-1 pt-14 sm:pt-16">
+        {children}
+      </main>
     </>
   );
 }

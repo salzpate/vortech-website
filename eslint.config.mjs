@@ -5,7 +5,7 @@ import prettier from 'eslint-plugin-prettier/recommended';
 import reactPlugin from 'eslint-plugin-react';
 
 const eslintConfig = defineConfig([
-  globalIgnores(['.next/**', 'out/**', 'build/**', 'next-env.d.ts', '!node_modules/', '/dist/**', 'postcss.config.mjs', '**/setupTests.ts']),
+  globalIgnores(['.next/**', 'out/**', 'build/**', 'next-env.d.ts', 'node_modules/', '/dist/**', 'postcss.config.mjs', '**/setupTests.ts']),
   ...nextVitals,
   ...nextTs,
   prettier,
