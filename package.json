@@ -9,7 +9,7 @@
   "scripts": {
     "dev": "next dev",
     "build": "next build",
-    "lint": "next lint",
+    "lint": "eslint && tsc --noEmit",
     "lint:style": "npx stylelint '**/*.css' --fix",
     "prettier": "npx prettier --write .",
     "start": "next start"

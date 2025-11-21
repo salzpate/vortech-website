@@ -11,6 +11,11 @@ const eslintConfig = defineConfig([
   prettier,
   {
     extends: [reactPlugin.configs.flat.recommended, reactPlugin.configs.flat['jsx-runtime']],
+    settings: {
+      react: {
+        version: '19.2.0',
+      },
+    },
     rules: {
       'import/extensions': 'off',
       'jsx-a11y/anchor-is-valid': 'off',
