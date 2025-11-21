@@ -6,7 +6,7 @@ import { PageLink, PageSection } from '@salzpate/react-ui';
 function Impressum(): JSX.Element {
   return (
     <PageSection headline="Impressum" id="impressum">
-      <div className="page-section pb-8">
+      <article className="page-section pb-8">
         Elfi Bast
         <br />
         VORTECH FORCE Generalimport
@@ -64,7 +64,7 @@ function Impressum(): JSX.Element {
         <PageLink href="https://www.juraforum.de/impressum-generator/" target="_blank" rel="nofollow noreferrer">
           Impressum Generator von JuraForum.de
         </PageLink>
-      </div>
+      </article>
     </PageSection>
   );
 }

@@ -7,7 +7,7 @@ export function Themefix(): JSX.Element {
       <div>d</div>
       <div>d</div>
       <div>d</div>
-      <div>d</div>
+      <div className="text-xs font-thin sm:flex-row md:text-sm">d</div>
       <div className="text-primary">--color-primary: #ffffff;</div>
       <div className="text-secondary">--color-secondary: #8b2000;</div>
       <div className="dark:text-secondary-dark">--color-secondary-dark: #f44336;</div>

@@ -1,0 +1,31 @@
+/* Print-spezifische Styles */
+@media print {
+  /* Header und Footer ausblenden */
+  header,
+  footer,
+  nav,
+  .no-print {
+    display: none !important;
+  }
+
+  /* Hauptinhalt optimieren */
+  main {
+    padding-top: 0 !important;
+  }
+
+  /* Seitenumbrüche */
+  .no-break {
+    break-inside: avoid !important;
+  }
+
+  /* Links sichtbar machen */
+  a[href]:after {
+    content: " (" attr(href) ")";
+  }
+
+  /* Farben für Druck optimieren */
+  * {
+    background: white !important;
+    color: black !important;
+  }
+}

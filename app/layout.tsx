@@ -3,9 +3,12 @@ import { Metadata } from 'next';
 import { MenuData } from '@/data/MenuData';
 import { SITE_DESC, SITE_TITLE } from '@/lib/constants';
 import { SnackBarProvider } from '@/components/SnackBar';
+import SkipLink from '@/components/SkipLink';
+import ScrollToTop from '@/components/ScrollToTop';
 
 import '@salzpate/react-ui/dist/style.css';
 import '@/styles/globals.css';
+import '@/styles/print.css';
 import { Footer } from '@/components/Footer';
 
 const footerText = '© Elfi Bast - VORTECH FORCE Generalimport - Am Hügel 3 - 93089 Aufhausen - +49 9454 9498523';
@@ -26,6 +29,8 @@ function RootLayout({ children }: PropsWithChildren<object>): JSX.Element {
     <html lang="de">
       <head />
       <body>
+        <SkipLink />
+        <ScrollToTop />
         <SnackBarProvider>
           {children}
           <Footer text={footerText} menuItems={footerMenuItems} />
