@@ -7,7 +7,7 @@ const config = {
   bracketSpacing: true,
   endOfLine: 'lf',
   jsxSingleQuote: false,
-  parser: 'typescript',
+
   printWidth: 240,
   proseWrap: 'preserve',
   quoteProps: 'as-needed',
@@ -18,7 +18,7 @@ const config = {
   useTabs: false,
   plugins: ['prettier-plugin-tailwindcss'],
   tailwindStylesheet: './styles/globals.css',
-  tailwindFunctions: ['cn'],
+  tailwindFunctions: ['cn', 'clsx'],
   overrides: [
     {
       files: '*.html',

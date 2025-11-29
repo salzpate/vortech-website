@@ -1,12 +1,14 @@
 'use client';
 
-import { JSX } from 'react';
-import styles from './ContactForm.module.css';
+import { SnackBarTypes } from '@salzpate/react-ui';
 import axios, { AxiosError, AxiosResponse, RawAxiosRequestConfig } from 'axios';
 import Link from 'next/link';
+import { JSX } from 'react';
 import { useForm } from 'react-hook-form';
+
 import { useSnackBar } from '@/components/SnackBar';
-import { SnackBarTypes } from '@salzpate/react-ui';
+
+import styles from './ContactForm.module.css';
 
 type MailSendData = {
   status: string;

@@ -1,7 +1,7 @@
 'use client';
 
-import { JSX } from 'react';
 import { PageSection } from '@salzpate/react-ui';
+import { JSX } from 'react';
 
 function AGB(): JSX.Element {
   return (

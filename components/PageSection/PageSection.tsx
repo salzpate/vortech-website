@@ -1,7 +1,7 @@
 'use client';
 
+import { PageSection as UiPageSection, type PageSectionProps } from '@salzpate/react-ui';
 import { JSX, PropsWithChildren } from 'react';
-import { type PageSectionProps, PageSection as UiPageSection } from '@salzpate/react-ui';
 
 function PageSection(props: PropsWithChildren<PageSectionProps>): JSX.Element {
   const { id, headline, className, subSection = false, children } = props;

@@ -1,7 +1,7 @@
 'use client';
 
-import { JSX } from 'react';
 import { HeadlineTextElement, PageSection } from '@salzpate/react-ui';
+import { JSX } from 'react';
 
 function VortechForce(): JSX.Element {
   return (

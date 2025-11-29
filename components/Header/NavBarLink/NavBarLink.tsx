@@ -1,6 +1,8 @@
-import { JSX } from 'react';
-import { NavMenu } from '@/components/commons/Menu/Menu';
 import Link from 'next/link';
+import { JSX } from 'react';
+
+import { NavMenu } from '@/components/commons/Menu/Menu';
+
 import styles from './NavBarLink.module.css';
 
 type NavBarLinkProps = NavMenu;

@@ -1,7 +1,7 @@
 'use client';
 
-import { JSX, createContext, ReactNode, useContext, useState } from 'react';
 import { SnackBar, SnackBarTypes } from '@salzpate/react-ui';
+import { createContext, JSX, ReactNode, useContext, useState } from 'react';
 
 export const defaultDuration = 500;
 export const defaultInterval = 250;
@@ -71,4 +71,4 @@ function SnackBarProvider(props: Readonly<SnackBarProviderProps>): JSX.Element {
 }
 
 export default SnackBarProvider;
-export { useSnackBar, CtxProvider };
+export { CtxProvider, useSnackBar };

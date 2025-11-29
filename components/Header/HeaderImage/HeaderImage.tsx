@@ -1,5 +1,6 @@
 import { JSX, PropsWithChildren } from 'react';
-import cn from 'classnames';
+import { cn } from 'utils';
+
 import styles from './HeaderImage.module.css';
 
 type HeaderImageProps = {

@@ -1,15 +1,15 @@
-import { JSX, PropsWithChildren } from 'react';
-import { Metadata, Viewport } from 'next';
-import { MenuData } from '@/data/MenuData';
-import { SITE_DESC, SITE_TITLE, SITE_URL, SITE_NAME, SITE_KEYWORDS } from '@/lib/constants';
-import { SnackBarProvider } from '@/components/SnackBar';
-import SkipLink from '@/components/SkipLink';
-import ScrollToTop from '@/components/ScrollToTop';
-
-import '@salzpate/react-ui/dist/style.css';
 import '@/styles/globals.css';
 import '@/styles/print.css';
+
+import { Metadata, Viewport } from 'next';
+import { JSX, PropsWithChildren } from 'react';
+
 import { Footer } from '@/components/Footer';
+import ScrollToTop from '@/components/ScrollToTop';
+import SkipLink from '@/components/SkipLink';
+import { SnackBarProvider } from '@/components/SnackBar';
+import { MenuData } from '@/data/MenuData';
+import { SITE_DESC, SITE_KEYWORDS, SITE_NAME, SITE_TITLE, SITE_URL } from '@/lib/constants';
 
 const footerText = '© Elfi Bast - VORTECH FORCE Generalimport - Am Hügel 3 - 93089 Aufhausen - +49 9454 9498523';
 

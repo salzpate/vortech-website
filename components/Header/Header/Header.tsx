@@ -1,13 +1,15 @@
 'use client';
 
-import { JSX, useState, useRef } from 'react';
+import { NavLink } from '@salzpate/react-ui';
+import Link from 'next/link';
+import { JSX, useRef, useState } from 'react';
+import { cn } from 'utils';
+
 import { ActiveMenuItem, NavMenuItem } from '@/components/commons/Menu/Menu';
 import NavBarLink from '@/components/Header/NavBarLink';
-import { NavLink } from '@salzpate/react-ui';
-import cn from 'classnames';
-import Link from 'next/link';
-import { useFocusTrap } from '@/hooks/useFocusTrap';
 import { useBodyScrollLock } from '@/hooks/useBodyScrollLock';
+import { useFocusTrap } from '@/hooks/useFocusTrap';
+
 import styles from './Header.module.css';
 
 interface HeaderProps extends ActiveMenuItem {
@@ -46,9 +48,9 @@ function Header(props: Readonly<HeaderProps>): JSX.Element {
             </div>
             <div className="hidden md:flex">
               <div className="inline-flex items-center justify-center space-x-6">
-                {navMenuItems.map((item, i) => {
+                {navMenuItems.map(item => {
                   return (
-                    <NavBarLink key={i} href={item.href} activeMenuName={item.activeMenuName} activeMenu={activeMenu}>
+                    <NavBarLink key={item.id} id={item.id} href={item.href} activeMenuName={item.activeMenuName} activeMenu={activeMenu}>
                       {item.children}
                     </NavBarLink>
                   );
@@ -96,7 +98,7 @@ function Header(props: Readonly<HeaderProps>): JSX.Element {
         </span>
         {navMenuItems.map(item => {
           return (
-            <span key={`link-${item.href.toString()}`} className="mb-1 flex px-2">
+            <span key={item.id} className="mb-1 flex px-2">
               <NavLink href={item.href} activeMenuName={item.activeMenuName} activeMenu={activeMenu}>
                 {item.children}
               </NavLink>

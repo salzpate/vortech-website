@@ -1,8 +1,9 @@
 'use client';
 
-import { JSX } from 'react';
-import ContactForm from '@/components/Contact/ContactForm';
 import { ContactCard, PageSection } from '@salzpate/react-ui';
+import { JSX } from 'react';
+
+import ContactForm from '@/components/Contact/ContactForm';
 
 function Contact(): JSX.Element {
   return (

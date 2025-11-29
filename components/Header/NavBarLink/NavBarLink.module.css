@@ -30,7 +30,7 @@
   --tw-ease: var(--ease-in-out);
   background-color: var(--color-secondary);
   bottom: -8px;
-  content: "";
+  content: '';
   height: 2px;
   margin: 2px 0 0;
   opacity: 0%;

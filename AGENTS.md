@@ -31,12 +31,13 @@ Diese Datei dokumentiert die verfügbaren KI-Agenten und Tools für das Vortech 
 - **HTTP Client:** axios
 - **Utilities:** classnames, tailwind-merge
 
-### Code Quality
+### Code Quality & Testing
 
-- **Linting:** ESLint 9 + eslint-config-next
-- **Styling:** Stylelint
+- **Linting:** ESLint 9 + eslint-config-next + eslint-plugin-simple-import-sort
+- **Styling:** Stylelint mit alphabetischer Property-Sortierung
 - **Formatierung:** Prettier + prettier-plugin-tailwindcss
-- **Testing:** Vitest + @testing-library/react
+- **Testing:** Vitest + @testing-library/react + @testing-library/user-event
+- **Mocking:** Vitest vi für Mocks und Spies
 
 ## MCP Server
 
@@ -162,7 +163,7 @@ npm start               # Production Server
 ### Code Quality
 
 ```bash
-npm run lint            # ESLint (Next.js + TypeScript)
+npm run lint            # ESLint + TypeScript Check
 npm run lint:style      # Stylelint für CSS
 npm run prettier        # Code-Formatierung
 ```
@@ -215,10 +216,12 @@ npm run prettier        # Code-Formatierung
 
 ### Code-Standards
 
-- TypeScript Strict Mode
-- ESLint + Prettier Konfiguration
-- Komponenten-basierte Architektur
-- Path Aliases für saubere Imports
+- TypeScript Strict Mode mit allen Strict-Flags
+- ESLint Flat Config mit automatischer Import-Sortierung
+- Prettier mit Tailwind-Plugin für konsistente Formatierung
+- Komponenten-basierte Architektur mit Unit-Tests
+- Path Aliases für saubere Imports (@/components, @/hooks, etc.)
+- 100% Test-Coverage für Komponenten und Hooks
 
 ### API & Backend
 
@@ -228,12 +231,21 @@ npm run prettier        # Code-Formatierung
 
 ## Testing
 
+Vitest ist konfiguriert für Unit Tests mit React Testing Library.
+
 ```bash
-# Vitest ist konfiguriert für Unit Tests
-npm run test            # Tests ausführen
+npm run test            # Tests ausführen (Single Run)
+npm run test:watch      # Tests im Watch-Mode
 npm run test:ui         # Vitest UI
 npm run test:coverage   # Coverage Report
 ```
+
+### Test-Struktur
+
+- **Komponenten-Tests:** Alle Komponenten in `/components` haben `.test.tsx` Dateien
+- **Hook-Tests:** Custom Hooks in `/hooks` haben `.test.ts` Dateien
+- **Globals:** Vitest Globals aktiviert (describe, it, expect, vi, beforeEach)
+- **Setup:** `vitest.setup.ts` mit @testing-library/jest-dom
 
 ## MCP Server Verwaltung
 

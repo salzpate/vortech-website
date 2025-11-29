@@ -3,6 +3,7 @@
 export default {
   extends: ['stylelint-config-recommended', 'stylelint-prettier/recommended'],
   plugins: ['stylelint-order', 'stylelint-prettier'],
+  ignoreFiles: ['node_modules/**', 'out/**', '.next/**', 'build/**', 'coverage/**', 'test-results/**'],
   rules: {
     'font-family-no-missing-generic-family-keyword': [
       true,

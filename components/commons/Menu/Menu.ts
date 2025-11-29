@@ -4,6 +4,7 @@ import { UrlObject } from 'url';
 export type Url = string | UrlObject;
 
 export interface NavMenuItem {
+  id: string;
   children: ReactNode;
   href: Url;
   activeMenuName?: string;

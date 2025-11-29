@@ -1,5 +1,6 @@
-import { JSX } from 'react';
 import Link from 'next/link';
+import { JSX } from 'react';
+
 import { NavMenuItem } from '@/components/commons/Menu/Menu';
 
 interface SiteMapProps {

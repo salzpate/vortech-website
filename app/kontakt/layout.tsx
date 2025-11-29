@@ -1,8 +1,9 @@
-import { JSX } from 'react';
 import { Metadata } from 'next';
+import { JSX } from 'react';
+
+import HeaderImage from '@/components/Header/HeaderImage/HeaderImage';
 import HeaderMainLayout from '@/components/HeaderMainLayout/HeaderMainLayout';
 import { SITE_TITLE } from '@/lib/constants';
-import HeaderImage from '@/components/Header/HeaderImage/HeaderImage';
 import styles from '@/styles/kontakt.module.css';
 
 export const metadata: Metadata = {

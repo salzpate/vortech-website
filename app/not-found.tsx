@@ -1,13 +1,14 @@
-import { JSX } from 'react';
-import HeaderImage from '@/components/Header/HeaderImage';
-import styles from '@/styles/index.module.css';
-import HeaderMainLayout from '@/components/HeaderMainLayout/HeaderMainLayout';
 import { Metadata } from 'next';
 import Link from 'next/link';
+import { JSX } from 'react';
+
+import HeaderImage from '@/components/Header/HeaderImage';
+import HeaderMainLayout from '@/components/HeaderMainLayout/HeaderMainLayout';
 import PageSection from '@/components/PageSection';
 import QuickSearch from '@/components/QuickSearch';
 import SiteMap from '@/components/SiteMap';
 import { MenuData } from '@/data/MenuData';
+import styles from '@/styles/index.module.css';
 
 export const metadata: Metadata = {
   title: '404 - Seite nicht gefunden',

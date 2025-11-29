@@ -1,11 +1,12 @@
 'use client';
 
+import { ContactCard, MoreLink, PageSection } from '@salzpate/react-ui';
 import { JSX } from 'react';
+
+import ContactForm from '@/components/Contact/ContactForm';
 import HeaderImage from '@/components/Header/HeaderImage';
 import HeaderMainLayout from '@/components/HeaderMainLayout';
 import styles from '@/styles/index.module.css';
-import { ContactCard, MoreLink, PageSection } from '@salzpate/react-ui';
-import ContactForm from '@/components/Contact/ContactForm';
 
 function Home(): JSX.Element {
   return (

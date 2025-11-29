@@ -1,7 +1,7 @@
 'use client';
 
+import { Footer as UiFooter, NavMenuItem } from '@salzpate/react-ui';
 import { JSX, ReactNode } from 'react';
-import { NavMenuItem, Footer as UiFooter } from '@salzpate/react-ui';
 
 interface FooterProps {
   text: ReactNode;

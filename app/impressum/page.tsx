@@ -1,7 +1,7 @@
 'use client';
 
-import { JSX } from 'react';
 import { PageLink, PageSection } from '@salzpate/react-ui';
+import { JSX } from 'react';
 
 function Impressum(): JSX.Element {
   return (
