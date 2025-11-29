@@ -1,5 +1,6 @@
 import { JSX, PropsWithChildren } from 'react';
-import { cn } from 'utils';
+
+import { cn } from '@/utils/cn';
 
 import styles from './HeaderImage.module.css';
 

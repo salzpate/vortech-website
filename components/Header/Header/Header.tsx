@@ -3,12 +3,12 @@
 import { NavLink } from '@salzpate/react-ui';
 import Link from 'next/link';
 import { JSX, useRef, useState } from 'react';
-import { cn } from 'utils';
 
 import { ActiveMenuItem, NavMenuItem } from '@/components/commons/Menu/Menu';
 import NavBarLink from '@/components/Header/NavBarLink';
 import { useBodyScrollLock } from '@/hooks/useBodyScrollLock';
 import { useFocusTrap } from '@/hooks/useFocusTrap';
+import { cn } from '@/utils/cn';
 
 import styles from './Header.module.css';
 
@@ -46,21 +46,19 @@ function Header(props: Readonly<HeaderProps>): JSX.Element {
                 </Link>
               </div>
             </div>
-            <div className="hidden md:flex">
-              <div className="inline-flex items-center justify-center space-x-6">
-                {navMenuItems.map(item => {
-                  return (
-                    <NavBarLink key={item.id} id={item.id} href={item.href} activeMenuName={item.activeMenuName} activeMenu={activeMenu}>
-                      {item.children}
-                    </NavBarLink>
-                  );
-                })}
-              </div>
+            <div className="hidden md:inline-flex md:items-center md:justify-center md:space-x-6">
+              {navMenuItems.map(item => {
+                return (
+                  <NavBarLink key={item.id} id={item.id} href={item.href} activeMenuName={item.activeMenuName} activeMenu={activeMenu}>
+                    {item.children}
+                  </NavBarLink>
+                );
+              })}
             </div>
-            <div className="-mr-2 flex md:hidden">
+            <div className="-mr-2 md:hidden">
               <button
                 ref={menuButtonRef}
-                className="text-header-color inline-flex items-center justify-center rounded-full p-2 transition-all duration-300 ease-in-out hover:bg-black hover:text-gray-100 hover:opacity-75 dark:text-white/87"
+                className="text-header-color flex items-center justify-center rounded-full p-2 transition-all duration-300 ease-in-out hover:bg-black hover:text-gray-100 hover:opacity-75 dark:text-white/87"
                 onClick={() => setIsOn(true)}
                 aria-label={isOn ? 'Menü schließen' : 'Menü öffnen'}
                 aria-expanded={isOn}

@@ -130,3 +130,32 @@
     color: var(--color-secondary-dark);
   }
 }
+
+:global(.dark) .textinput,
+:global(.dark) .textinputwhite,
+:global(.dark) .textinputerror {
+  background-color: var(--color-black);
+  color: var(--color-gray-300);
+}
+
+:global(.dark) .textinputerror {
+  border-color: var(--color-red-500);
+}
+
+:global(.dark) .textinput:focus,
+:global(.dark) .textinput:hover,
+:global(.dark) .textinputwhite:focus,
+:global(.dark) .textinputwhite:hover,
+:global(.dark) .textinputerror:focus,
+:global(.dark) .textinputerror:hover {
+  border-color: var(--color-secondary-dark);
+}
+
+:global(.dark) .textinput:focus + label,
+:global(.dark) .textinput:hover + label,
+:global(.dark) .textinputwhite:focus + label,
+:global(.dark) .textinputwhite:hover + label,
+:global(.dark) .textinputerror:focus + label,
+:global(.dark) .textinputerror:hover + label {
+  color: var(--color-secondary-dark);
+}

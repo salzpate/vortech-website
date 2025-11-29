@@ -1,5 +1,6 @@
+import { UrlObject } from 'node:url';
+
 import { ReactNode } from 'react';
-import { UrlObject } from 'url';
 
 export type Url = string | UrlObject;
 

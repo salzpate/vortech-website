@@ -19,3 +19,7 @@
     filter: grayscale(60%);
   }
 }
+
+:global(.dark) .headerimage {
+  filter: grayscale(60%);
+}

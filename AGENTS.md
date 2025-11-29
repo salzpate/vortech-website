@@ -128,6 +128,7 @@ npx -y next-devtools-mcp@latest
   - `@/hooks/*` → `hooks/*`
   - `@/lib/*` → `lib/*`
   - `@/styles/*` → `styles/*`
+  - `@/utils/*` → `utils/*`
 
 ### Tailwind Config
 
@@ -163,9 +164,11 @@ npm start               # Production Server
 ### Code Quality
 
 ```bash
-npm run lint            # ESLint + TypeScript Check
-npm run lint:style      # Stylelint für CSS
-npm run prettier        # Code-Formatierung
+npm run lint              # ESLint + TypeScript Check
+npm run lint:style        # Stylelint fix für CSS
+npm run lint:style:check  # Stylelint check für CSS
+npm run format            # Code-Formatierung
+npm run format:check      # Code-Formatierung überprüfung
 ```
 
 ## Komponenten-Architektur
@@ -192,6 +195,11 @@ npm run prettier        # Code-Formatierung
 - CSS Modules für Styling
 - Client Components (`'use client'`) wo nötig
 
+## Implementierungshinweise
+
+- Falls es Bedingungen im Tailwindcss className String gibt, soll die utility Methode cn() verwendet werden.
+
+
 ## Wichtige Hinweise für Agenten
 
 ### Sprache & Inhalt
@@ -206,6 +214,9 @@ npm run prettier        # Code-Formatierung
 - **Dark Mode:** Vollständig unterstützt
 - **Accessibility:** WCAG-konform (SkipLink, semantisches HTML)
 - **Performance:** Optimiert für schnelle Ladezeiten
+- **Icons:** Hero Icons
+
+
 
 ### SEO & Marketing
 

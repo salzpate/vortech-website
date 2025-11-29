@@ -8,6 +8,7 @@ import { Footer } from '@/components/Footer';
 import ScrollToTop from '@/components/ScrollToTop';
 import SkipLink from '@/components/SkipLink';
 import { SnackBarProvider } from '@/components/SnackBar';
+import ThemeProvider from '@/components/ThemeProvider';
 import { MenuData } from '@/data/MenuData';
 import { SITE_DESC, SITE_KEYWORDS, SITE_NAME, SITE_TITLE, SITE_URL } from '@/lib/constants';
 
@@ -103,17 +104,19 @@ function RootLayout({ children }: PropsWithChildren<object>): JSX.Element {
   };
 
   return (
-    <html lang="de">
+    <html lang="de" suppressHydrationWarning>
       <head>
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(organizationSchema) }} />
       </head>
       <body>
-        <SkipLink />
-        <ScrollToTop />
-        <SnackBarProvider>
-          {children}
-          <Footer text={footerText} menuItems={footerMenuItems} />
-        </SnackBarProvider>
+        <ThemeProvider>
+          <SkipLink />
+          <ScrollToTop />
+          <SnackBarProvider>
+            {children}
+            <Footer text={footerText} menuItems={footerMenuItems} />
+          </SnackBarProvider>
+        </ThemeProvider>
       </body>
     </html>
   );

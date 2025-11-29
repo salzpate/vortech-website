@@ -29,6 +29,12 @@ export default {
         ignoreFunctions: ['theme'],
       },
     ],
+    'selector-pseudo-class-no-unknown': [
+      true,
+      {
+        ignorePseudoClasses: ['global'],
+      },
+    ],
     'order/properties-alphabetical-order': true,
     'prettier/prettier': true,
   },

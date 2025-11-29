@@ -29,3 +29,8 @@
     background-image: url('/assets/images/logo-dark-7ddb1f8f39.jpg');
   }
 }
+
+:global(.dark) .headlogo,
+:global(.dark) .headlogoSide {
+  background-image: url('/assets/images/logo-dark-7ddb1f8f39.jpg');
+}
