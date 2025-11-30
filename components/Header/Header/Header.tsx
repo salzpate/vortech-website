@@ -10,8 +10,6 @@ import { useBodyScrollLock } from '@/hooks/useBodyScrollLock';
 import { useFocusTrap } from '@/hooks/useFocusTrap';
 import { cn } from '@/utils/cn';
 
-import styles from './Header.module.css';
-
 interface HeaderProps extends ActiveMenuItem {
   navMenuItems: NavMenuItem[];
 }
@@ -41,7 +39,11 @@ function Header(props: Readonly<HeaderProps>): JSX.Element {
           <div className="flex h-14 items-center justify-between sm:h-16">
             <div className="flex items-center">
               <div className="shrink-0">
-                <Link href="/" className={styles.headlogo} aria-label="Zur Startseite">
+                <Link
+                  href="/"
+                  className="block h-[34px] w-[160px] bg-[url('/assets/images/logo-7ddb1f8f39.jpg')] bg-size-[160px_34px] sm:h-12 sm:w-[226px] sm:bg-size-[226px_48px] dark:bg-[url('/assets/images/logo-dark-7ddb1f8f39.jpg')]"
+                  aria-label="Zur Startseite"
+                >
                   &nbsp;
                 </Link>
               </div>
@@ -90,7 +92,7 @@ function Header(props: Readonly<HeaderProps>): JSX.Element {
         aria-hidden={!isOn}
       >
         <span className="flex w-full items-center justify-between p-4">
-          <Link href="/" className={styles.headlogoSide} aria-label="Zur Startseite">
+          <Link href="/" className="mx-auto block h-12 w-[226px] bg-[url('/assets/images/logo-7ddb1f8f39.png')] bg-size-[226px_48px] dark:bg-[url('/assets/images/logo-dark-7ddb1f8f39.jpg')]" aria-label="Zur Startseite">
             &nbsp;
           </Link>
         </span>

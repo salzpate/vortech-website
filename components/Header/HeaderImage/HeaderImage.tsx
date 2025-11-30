@@ -2,8 +2,6 @@ import { JSX, PropsWithChildren } from 'react';
 
 import { cn } from '@/utils/cn';
 
-import styles from './HeaderImage.module.css';
-
 type HeaderImageProps = {
   imageClass?: string;
   text1?: string;
@@ -14,15 +12,17 @@ type HeaderImageProps = {
 function HeaderImage(props: PropsWithChildren<HeaderImageProps>): JSX.Element {
   const { imageClass, text1, text2, alternate = false, children } = props;
 
+  const baseClasses = 'min-h-[240px] sm:min-h-[320px] lg:min-h-[360px] bg-transparent bg-cover bg-scroll bg-center bg-no-repeat dark:grayscale-[60%]';
+
   if (children) {
     return (
-      <div className={cn(styles.headerimage, 'bg-transparent bg-cover bg-scroll bg-center bg-no-repeat', imageClass)} aria-label="Header Bild">
+      <div className={cn(baseClasses, imageClass)} aria-label="Header Bild">
         {children}
       </div>
     );
   } else {
     return (
-      <div className={cn(styles.headerimage, 'bg-transparent bg-cover bg-scroll bg-center bg-no-repeat', imageClass)} aria-label="Header Bild">
+      <div className={cn(baseClasses, imageClass)} aria-label="Header Bild">
         <div className="absolute w-full">
           <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
             <div className="relative mt-14 sm:mt-32">

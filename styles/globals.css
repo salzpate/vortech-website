@@ -3,6 +3,8 @@
 @import 'tailwindcss';
 @import '@salzpate/react-ui/styles';
 
+@custom-variant dark (&:where(.dark, .dark *));
+
 @theme {
   --color-primary: #fff;
   --color-secondary: #8b2000;
@@ -156,6 +158,14 @@ a[href^='#']:target {
 
 .dark .images-dark {
   filter: grayscale(60%);
+}
+
+.light body {
+  background-color: #fff;
+}
+
+.light .images-dark {
+  filter: none;
 }
 
 @media print {

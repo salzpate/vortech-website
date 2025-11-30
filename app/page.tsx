@@ -6,13 +6,12 @@ import { JSX } from 'react';
 import ContactForm from '@/components/Contact/ContactForm';
 import HeaderImage from '@/components/Header/HeaderImage';
 import HeaderMainLayout from '@/components/HeaderMainLayout';
-import styles from '@/styles/index.module.css';
 
 function Home(): JSX.Element {
   return (
     <HeaderMainLayout>
-      <HeaderImage text1="Die Kraft der Natur" text2="Die Stärke der Technologie" imageClass={styles.headerimage} />
-      <PageSection headline="Elfi Bast - VORTECH FORCE Generalimport" id="index" className="page-section">
+      <HeaderImage text1="Die Kraft der Natur" text2="Die Stärke der Technologie" imageClass="bg-[url('/assets/images/head-vortech-1024-760a552188.jpg')] lg:bg-[url('/assets/images/head-vortech-1920-938f342435.jpg')]" />
+      <PageSection headline="Elfi Bast - VORTECH FORCE Generalimport" id="index">
         <p>Wir bieten Beratung, Direktvertrieb und Kundendienst für VORTECH FORCE in Deutschland an. Für ein sauberes Zuhause nach industriellen Standards.</p>
         <div className="my-6 grid grid-cols-1 gap-6 sm:my-8 sm:grid-cols-2">
           <MoreLink href="/vortech-force/" headline="VORTECH FORCE" imgSrc="/assets/images/vortech-geraet-schlauch-f4f3c86daf.jpg">
@@ -20,7 +19,7 @@ function Home(): JSX.Element {
           </MoreLink>
         </div>
       </PageSection>
-      <PageSection headline="Kontakt" id="kontakt" subSection={true} className="page-section bg-gray-200 pb-6 sm:pb-8 dark:bg-gray-900">
+      <PageSection headline="Kontakt" id="kontakt" subSection={true} className="bg-gray-200 pb-6 sm:pb-8 dark:bg-gray-900">
         <p>Haben Sie interesse an einer Produktvorstellung? Wollen Sie Zubehör bestellen oder benötigen Sie einen Kundendienst?</p>
         <div className="mt-6 grid grid-cols-1 gap-6 sm:mt-8 sm:grid-cols-3">
           <div>

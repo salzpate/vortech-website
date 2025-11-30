@@ -1,9 +1,0 @@
-.headerimage {
-  background-image: url('/assets/images/head-vortech-1920-938f342435.jpg');
-}
-
-@media screen and (max-width: 1024px) {
-  .headerimage {
-    background-image: url('/assets/images/head-vortech-1024-760a552188.jpg');
-  }
-}

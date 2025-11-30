@@ -8,7 +8,6 @@ import PageSection from '@/components/PageSection';
 import QuickSearch from '@/components/QuickSearch';
 import SiteMap from '@/components/SiteMap';
 import { MenuData } from '@/data/MenuData';
-import styles from '@/styles/index.module.css';
 
 export const metadata: Metadata = {
   title: '404 - Seite nicht gefunden',
@@ -24,7 +23,7 @@ function FileNotFound(): JSX.Element {
 
   return (
     <HeaderMainLayout>
-      <HeaderImage text1="Die Kraft der Natur" text2="Die Stärke der Technologie" imageClass={styles.headerimage} />
+      <HeaderImage text1="Die Kraft der Natur" text2="Die Stärke der Technologie" imageClass="bg-[url('/assets/images/head-vortech-1024-760a552188.jpg')] lg:bg-[url('/assets/images/head-vortech-1920-938f342435.jpg')]" />
       <PageSection headline="Seite nicht gefunden" id="notfound">
         <p className="pb-6 text-lg text-paragraph sm:pb-8 dark:text-paragraph-dark">Die gewünschte Seite wurde leider nicht gefunden. Möglicherweise wurde sie verschoben oder gelöscht.</p>
         <div className="pb-6 sm:pb-8">

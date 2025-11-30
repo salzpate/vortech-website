@@ -6,7 +6,7 @@ import { JSX } from 'react';
 function AGB(): JSX.Element {
   return (
     <PageSection headline="Allgemeine Geschäftsbedingungen für den Kauf und die Lieferung neuwertiger Waren durch die Verkäuferfirma" id="agb">
-      <article className="page-section pb-8">
+      <article className="pb-8">
         <h2 className="text-xl font-medium tracking-tight text-gray-900 uppercase sm:text-2xl lg:text-3xl dark:text-gray-200">A. Vertragsabschluss</h2>
         <p className="my-4">
           Der Kaufvertrag kommt durch Annahme der vom Käufer unterzeichneten Bestellung des Kaufgegenstandes zustande. Eine schriftliche Bestätigung der Annahme durch den Verkäufer ist nicht erforderlich. Der Verkäufer verpflichtet sich

@@ -6,7 +6,7 @@ import { JSX } from 'react';
 function Impressum(): JSX.Element {
   return (
     <PageSection headline="Impressum" id="impressum">
-      <article className="page-section pb-8">
+      <article className="pb-8">
         Elfi Bast
         <br />
         VORTECH FORCE Generalimport

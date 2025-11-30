@@ -7,7 +7,7 @@ import ContactForm from '@/components/Contact/ContactForm';
 
 function Contact(): JSX.Element {
   return (
-    <PageSection headline="Kontakt" id="kontakt" className="page-section">
+    <PageSection headline="Kontakt" id="kontakt">
       <p>Haben Sie interesse an einer Produktvorstellung? Wollen Sie Zubehör bestellen oder benötigen Sie einen Kundendienst?</p>
       <div className="my-6 grid auto-rows-fr grid-cols-1 gap-6 sm:my-8 sm:grid-cols-3">
         <div>
