@@ -4,9 +4,9 @@ import SiteMap from './SiteMap';
 
 describe('SiteMap', () => {
   const menuItems = [
-    { href: '/vortech-force/', children: 'VORTECH FORCE' },
-    { href: '/kontakt/', children: 'Kontakt' },
-    { href: '/impressum/', children: 'Impressum' },
+    { id: 'vortech', href: '/vortech-force/', children: 'VORTECH FORCE' },
+    { id: 'kontakt', href: '/kontakt/', children: 'Kontakt' },
+    { id: 'impressum', href: '/impressum/', children: 'Impressum' },
   ];
 
   it('rendert Sitemap mit Standard-Titel', () => {

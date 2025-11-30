@@ -6,7 +6,7 @@ import { cn } from '@/utils/cn';
 
 type NavBarLinkProps = NavMenu;
 
-function NavBarLink(props: Readonly<NavBarLinkProps>): JSX.Element {
+function NavBarLink(props: Readonly<Omit<NavBarLinkProps, 'id'>>): JSX.Element {
   const { href, children, activeMenu, activeMenuName } = props;
   const isActive = activeMenuName && activeMenu && activeMenu === activeMenuName;
 

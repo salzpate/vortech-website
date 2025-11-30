@@ -199,7 +199,6 @@ npm run format:check      # Code-Formatierung überprüfung
 
 - Falls es Bedingungen im Tailwindcss className String gibt, soll die utility Methode cn() verwendet werden.
 
-
 ## Wichtige Hinweise für Agenten
 
 ### Sprache & Inhalt
@@ -215,8 +214,6 @@ npm run format:check      # Code-Formatierung überprüfung
 - **Accessibility:** WCAG-konform (SkipLink, semantisches HTML)
 - **Performance:** Optimiert für schnelle Ladezeiten
 - **Icons:** Hero Icons
-
-
 
 ### SEO & Marketing
 

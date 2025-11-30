@@ -51,7 +51,7 @@ function Header(props: Readonly<HeaderProps>): JSX.Element {
             <div className="hidden md:inline-flex md:items-center md:justify-center md:space-x-6">
               {navMenuItems.map(item => {
                 return (
-                  <NavBarLink key={item.id} id={item.id} href={item.href} activeMenuName={item.activeMenuName} activeMenu={activeMenu}>
+                  <NavBarLink key={item.id} href={item.href} activeMenuName={item.activeMenuName} activeMenu={activeMenu}>
                     {item.children}
                   </NavBarLink>
                 );

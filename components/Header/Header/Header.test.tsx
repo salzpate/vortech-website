@@ -13,9 +13,9 @@ vi.mock('@/hooks/useBodyScrollLock', () => ({
 
 describe('Header', () => {
   const navMenuItems = [
-    { href: '/', children: 'Home', activeMenuName: 'home' },
-    { href: '/vortech-force/', children: 'VORTECH FORCE', activeMenuName: 'vortech' },
-    { href: '/kontakt/', children: 'Kontakt', activeMenuName: 'kontakt' },
+    { id: 'home', href: '/', children: 'Home', activeMenuName: 'home' },
+    { id: 'vortech', href: '/vortech-force/', children: 'VORTECH FORCE', activeMenuName: 'vortech' },
+    { id: 'kontakt', href: '/kontakt/', children: 'Kontakt', activeMenuName: 'kontakt' },
   ];
 
   it('rendert Header mit Navigation', () => {
