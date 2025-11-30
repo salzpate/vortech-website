@@ -19,7 +19,7 @@ function Home(): JSX.Element {
           </MoreLink>
         </div>
       </PageSection>
-      <PageSection headline="Kontakt" id="kontakt" subSection={true} className="bg-gray-200 pb-6 sm:pb-8 dark:bg-gray-900">
+      <PageSection headline="Kontakt" id="kontakt" subSection={true} className="bg-gray-200 pb-6 sm:pb-8 dark:bg-gray-800">
         <p>Haben Sie interesse an einer Produktvorstellung? Wollen Sie Zubehör bestellen oder benötigen Sie einen Kundendienst?</p>
         <div className="mt-6 grid grid-cols-1 gap-6 sm:mt-8 sm:grid-cols-3">
           <div>
