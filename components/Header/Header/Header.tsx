@@ -60,7 +60,7 @@ function Header(props: Readonly<HeaderProps>): JSX.Element {
             <div className="-mr-2 md:hidden">
               <button
                 ref={menuButtonRef}
-                className="text-header-color flex items-center justify-center rounded-full p-2 transition-all duration-300 ease-in-out hover:bg-black hover:text-gray-100 hover:opacity-75 dark:text-white/87"
+                className="text-header-color flex cursor-pointer items-center justify-center rounded-full p-2 transition-all duration-300 ease-in-out hover:bg-black hover:text-gray-100 hover:opacity-75 dark:text-white/87"
                 onClick={() => setIsOn(true)}
                 aria-label={isOn ? 'Menü schließen' : 'Menü öffnen'}
                 aria-expanded={isOn}
