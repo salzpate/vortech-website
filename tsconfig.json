@@ -36,6 +36,6 @@
       }
     ]
   },
-  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts", ".next/dev/types/**/*.ts"],
-  "exclude": ["node_modules", "out"]
+  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", "next.config.js", "types/*.d.ts", ".next/types/**/*.ts", ".next/dev/types/**/*.ts"],
+  "exclude": ["node_modules", "out", "**/*.test.ts", "**/*.test.tsx", "vitest.config.ts", "vitest.setup.ts", "coverage"]
 }
