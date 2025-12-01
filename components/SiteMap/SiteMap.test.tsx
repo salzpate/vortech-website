@@ -29,6 +29,6 @@ describe('SiteMap', () => {
   it('rendert Links mit korrekten hrefs', () => {
     render(<SiteMap menuItems={menuItems} />);
     const link = screen.getByText('Kontakt').closest('a');
-    expect(link).toHaveAttribute('href', '/kontakt');
+    expect(link).toHaveAttribute('href', menuItems[1].href);
   });
 });

@@ -19,7 +19,7 @@ describe('NavBarLink', () => {
       </NavBarLink>,
     );
     const link = screen.getByText('Kontakt');
-    expect(link).toHaveAttribute('href', '/kontakt');
+    expect(link).toHaveAttribute('href', '/kontakt/');
   });
 
   it('zeigt aktiven Status', () => {
@@ -29,6 +29,7 @@ describe('NavBarLink', () => {
       </NavBarLink>,
     );
     const link = container.querySelector('a');
-    expect(link?.className).toContain('activated');
+    expect(link).toHaveClass('text-secondary');
+    expect(link?.className).toContain('before:w-full');
   });
 });
