@@ -26,4 +26,7 @@ export default defineConfig({
       '@/utils': path.resolve(__dirname, './utils'),
     },
   },
+  ssr: {
+    noExternal: ['@salzpate/react-ui'],
+  },
 });
